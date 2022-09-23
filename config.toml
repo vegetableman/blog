@@ -1,6 +1,7 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'Vignesh Anand'
+theme = 'etch'
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
