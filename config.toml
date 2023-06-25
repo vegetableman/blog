@@ -8,7 +8,7 @@ pygmentsUseClasses = true
 
 [params]
   description = "Blog"
-  copyright = "Copyright © 2022 Vignesh Anand"
+  copyright = "Copyright © 2023 Vignesh Anand"
   dark = "auto"
   highlight = true
 
@@ -33,3 +33,10 @@ pygmentsUseClasses = true
 [markup.goldmark.renderer]
   # Allows HTML in Markdown
   unsafe = true
+
+[imaging]
+  anchor = 'Smart'
+  bgColor = '#ffffff'
+  hint = 'photo'
+  quality = 75
+  resampleFilter = 'Box'
