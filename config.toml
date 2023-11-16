@@ -9,7 +9,6 @@ pygmentsUseClasses = true
 [params]
   description = "Blog"
   copyright = "Copyright © 2023 Vignesh Anand"
-  dark = "auto"
   highlight = true
 
 [menu]
@@ -25,7 +24,14 @@ pygmentsUseClasses = true
     name = "about"
     title = "about"
     url = "/about/"
-    weight = 20
+     weight = 20
+
+  [[menu.main]]
+    identifier = "hire_me"
+    name = "hire me"
+    title = "hire me"
+    url = "/about#hiring/"
+    weight = 30
 
 [permalinks]
   posts = "/:title/"
@@ -40,3 +46,6 @@ pygmentsUseClasses = true
   hint = 'photo'
   quality = 75
   resampleFilter = 'Box'
+
+[minify]
+  disableCSS = false
