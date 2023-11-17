@@ -1,0 +1,33 @@
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .image-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+}
+
+.image-gallery img {
+  width: 100%;
+}
+
+.post__title {
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+.post__content {
+  max-width: none;
+}
+
+.post {
+  max-width: none;
+}
+
+.post__content p {
+  max-width: 45rem;
+  margin: 0 auto;
+}

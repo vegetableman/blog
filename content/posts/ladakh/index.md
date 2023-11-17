@@ -1,7 +1,7 @@
 ---
 title: "Illustrations: Terrains and miscellaneous challenges"
 date: 2023-09-16T20:42:44+05:30
-css: ["css/terrains.css"]
+css: "css/terrains.css"
 ---
 
 Since Instagram get's fussy about the number of times you can edit gallery-based posts, am dumping my illustrations here.

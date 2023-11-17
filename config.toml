@@ -1,7 +1,6 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'Vignesh Anand'
-theme = 'etch'
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
@@ -24,7 +23,7 @@ pygmentsUseClasses = true
     name = "about"
     title = "about"
     url = "/about/"
-     weight = 20
+    weight = 20
 
   [[menu.main]]
     identifier = "hire_me"

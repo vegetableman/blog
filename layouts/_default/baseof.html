@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+      <main class="wrapper">
+        {{- partial "header.html" . -}}
+      <div id="content">
+        {{- block "main" . }}{{- end }}
+      </div>
+      {{- partial "footer.html" . -}}
+      <div class="placeholder"></div>
+      <script>
+          document.querySelector('.header__th_toggle').addEventListener('click', (e) => {
+              document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'light' ? 'dark': 'light';
+              localStorage.setItem('theme', document.documentElement.dataset.theme);
+          });
+      </script>
+      </main>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="post">
+    <header class="post__header">
+        <div class="post__header__hero"></div>
+        <h1 class="post__title">{{ .Title }}</h1>
+        <div class="post__time">
+        {{- if isset .Params "date" -}}
+            {{ if eq .Lastmod .Date }}
+                <time>{{ .Date | time.Format (i18n "post.created") }}</time>
+            {{ else }}
+                <time>{{ .Lastmod | time.Format (i18n "post.updated") }}</time>
+            {{ end }}
+        {{- end -}}
+        </div>
+    </header>
+    <div class="post__content">
+      {{- .Content -}}
+    </div>
+</article>
+{{ end }}

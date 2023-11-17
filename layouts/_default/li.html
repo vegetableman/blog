@@ -1,0 +1,6 @@
+<li class="listing__post">
+  <a class="listing__post__link" href="{{ .Permalink }}">
+    {{ .Title }}
+  </a>
+  <time class="listing__post__time">{{ .Date | time.Format (i18n "posts.date") }}</time>
+</li>
