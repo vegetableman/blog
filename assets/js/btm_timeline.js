@@ -1,3 +1,19 @@
-{{ $timeline1 := getJSON (print "posts/interfaces/demos/unobtrusive/timeline.json") | jsonify }}
+{{ $timeline1 := getJSON (print "content/posts/interfaces/demos/unobtrusive/timeline.json") | jsonify }}
+{{ $timeline2 := getJSON (print "content/posts/interfaces/demos/journey/1/timeline.json") | jsonify }}
+{{ $timeline3 := getJSON (print "content/posts/interfaces/demos/journey/2/timeline.json") | jsonify }}
+{{ $timeline4 := getJSON (print "content/posts/interfaces/demos/journey/3/timeline.json") | jsonify }}
+{{ $timeline5 := getJSON (print "content/posts/interfaces/demos/context/timeline.json") | jsonify }}
+{{ $timeline6 := getJSON (print "content/posts/interfaces/demos/undo/timeline.json") | jsonify }}
+{{ $timeline7 := getJSON (print "content/posts/interfaces/demos/humanize/cursor_1/timeline.json") | jsonify }}
+{{ $timeline8 := getJSON (print "content/posts/interfaces/demos/humanize/cursor_2/timeline.json") | jsonify }}
+{{ $timeline9 := getJSON (print "content/posts/interfaces/demos/humanize/ai/timeline.json") | jsonify }}
 
 let timeline1 = {{ $timeline1 }}
+let timeline2 = {{ $timeline2 }}
+let timeline3 = {{ $timeline3 }}
+let timeline4 = {{ $timeline4 }}
+let timeline5 = {{ $timeline5 }}
+let timeline6 = {{ $timeline6 }}
+let timeline7 = {{ $timeline7 }}
+let timeline8 = {{ $timeline8 }}
+let timeline9 = {{ $timeline9 }}

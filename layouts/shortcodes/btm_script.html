@@ -1,5 +1,5 @@
-{{ $jsResource := resources.Get "js/btm_timeline.js" }}
-{{ $jsResource2x := resources.Get "js/btm_timeline@2x.js" }}
+{{ $jsResource := resources.Get "js/btm_timeline.js" | resources.ExecuteAsTemplate "btm_timeline.js" . }}
+{{ $jsResource2x := resources.Get "js/btm_timeline@2x.js" | resources.ExecuteAsTemplate "btm_timeline@2x.js" . }}
 
 <script>
   let leftArrow = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>';
@@ -111,7 +111,6 @@
     }
 
     const delay_scale = t.delay_scale || 0.9;
-    console.log(delay_scale);
     let run_counter = 0;
     let ctx = canvas.getContext('2d');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
