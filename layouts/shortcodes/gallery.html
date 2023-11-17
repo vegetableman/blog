@@ -1,6 +1,13 @@
+{{ $folderPath := .Get "folder" }}
+{{ $imagePattern := path.Join "img" $folderPath "**.png" }}
+{{ $images := resources.Match $imagePattern }}
+
 <div class="image-gallery">
-  <picture>
-    <source srcset="/img/ladakh/Frame%201.png" media="(min-width: 600px)"/>
-    <img src="/img/ladakh/Frame%201_hucec36112a2cad1ecc7c967e103f57357_15521_500x0_resize_box_3.png" loading="lazy"/>
-  </picture>
+  {{ range $index, $image := $images }}
+  {{ $resizedImage := $image.Process "resize 500x" }}
+    <picture>
+      <source srcset="{{ $image.Permalink }}" media="(min-width: 600px)"/>
+      <img src="{{ $resizedImage.Permalink }}" loading="lazy"/>
+    </picture>
+  {{ end }}
 </div>

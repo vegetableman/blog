@@ -20,9 +20,9 @@ Since the front-end largely dictates the user experience of a product, I love dr
 
 ### Other Interests:  
 
-I enjoy riding motorbikes — it's solitude in spectacular motion. Between podcasts and blogs, I have finally managed to snuck in some fun books —  finished "Kitchen confidential" by Anthony Bourdain, currently reading "Fear and loathing at Rolling stone" by Hunter Thompson.
+I enjoy riding motorbikes — it's solitude in spectacular motion and working out. Between podcasts and blogs, I have finally managed to snuck in some books — currently reading "Fear and loathing at Rolling stone" by Hunter Thompson.
 
-Shelved interests (to keep myself accountable): Continue learning Japanese and that tenor sax.
+Shelved interests (to keep myself accountable): Continue learning Japanese and pick up that dormant rusting sax.
 
 ### This blog:
 

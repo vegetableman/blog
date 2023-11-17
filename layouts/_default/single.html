@@ -1,7 +1,12 @@
 {{ define "main" }}
 <article class="post">
     <header class="post__header">
-        <div class="post__header__hero"></div>
+        <div class="post__header__hero">
+            {{ with .Params.hero }}
+                {{ $svgContent := readFile (printf "%s" .) }}
+                {{ printf "%s" $svgContent | safeHTML }}
+            {{ end }}
+        </div>
         <h1 class="post__title">{{ .Title }}</h1>
         <div class="post__time">
         {{- if isset .Params "date" -}}
