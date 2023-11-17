@@ -219,11 +219,11 @@ time {
   cursor: pointer;
 }
 
-[data-theme="light"] .header__th-icon--light {
+html:not([data-theme]) .header__th-icon--light, html[data-theme="light"] .header__th-icon--light {
   display: none;
 }
 
-[data-theme="dark"] .header__th-icon--dark {
+html[data-theme="dark"] .header__th-icon--dark {
   display: none;
 }
 
