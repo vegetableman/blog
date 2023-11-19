@@ -12,6 +12,7 @@
   --black-57: hsl(0, 0%, 57%);
   --blue-56: hsl(219, 79%, 56%);
   --blue-40: hsl(219, 79%, 40%);
+  --blue: blue;
   --red-44: hsl(0, 98%, 44%);
   --black-a-24: hsla(0, 0%, 24%, 0.55);
   --yellow: yellow;
@@ -38,6 +39,7 @@
   --color-subtitle: var(--black-24);
   --color-icon: var(--black-47);
   --color-icon-hover: var(--black-20);
+  --color-code: var(--blue);
 }
 
 :root[data-theme="dark"] {
@@ -46,6 +48,7 @@
   --white-87: hsl(0, 0%, 87%);
   --white-90: hsl(0, 0%, 74%);
   --gray: gray;
+  --dark-orange: darkorange;
   --bg-color: var(--black-16);
   --color-link: var(--white-87);
   --color-link-hover: var(--white);
@@ -55,6 +58,7 @@
   --color-subtitle: var(--white);
   --color-icon: var(--black-87);
   --color-icon-hover: var(--white);
+  --color-code: var(--dark-orange);
 }
 
 *, *:before, *:after {
@@ -118,7 +122,9 @@ ul {
 
 code {
   font-size: 1rem;
+  color: var(--color-code);
 }
+
 p {
   margin: calc(var(--ru) * 1rem) 0;
 }
