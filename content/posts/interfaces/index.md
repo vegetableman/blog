@@ -54,7 +54,7 @@ Below are the characteristics of the navigation panel:
 
 ### Unobtrusive
 
-{{< btm_canvas id="demo1" width="720" height="402" ldHeight="348" index="0" >}}
+{{< btm_canvas id="demo1" aspectratio="1.84" width="720" height="402" ldHeight="348" index="0" >}}
 
 <div class="br"></div>
 
@@ -64,7 +64,7 @@ Tucked away at the bottom right of the screen, it will not take up much of the e
 
 ### Simulate a journey
 
-{{< btm_canvas id="demo2" width="402" height="514" slider="true" captions="slides_1" index="1" >}}
+{{< btm_canvas id="demo2" aspectratio="1.25" width="402" height="514" slider="true" captions="slides_1" index="1" >}}
 
 <div class="br"></div>
 
@@ -78,7 +78,7 @@ If you noticed the play <svg class="play-icon" xmlns="http://www.w3.org/2000/svg
 
 ### Context-rich
 
-{{< btm_canvas id="demo3" width="402" height="514" index="2" >}}
+{{< btm_canvas id="demo3" aspectratio="1.25" width="402" height="514" index="2" >}}
 
 <div class="br"></div>
 
@@ -88,7 +88,7 @@ List of actions update based on the current page — keeping the panel relevant 
 
 ### There's always Undo
 
-{{< btm_canvas id="demo4" width="402" height="514" index="3" >}}
+{{< btm_canvas id="demo4" aspectratio="1.25" width="402" height="514" index="3" >}}
 
 <div class="br"></div>
 
@@ -100,7 +100,7 @@ Out in the real world, when you are travelling and get lost somewhere, it's reas
 
 ### Humanize it
 
-{{< btm_canvas id="demo6" width="402" height="514" index="5" >}}
+{{< btm_canvas id="demo6" aspectratio="1.25" width="402" height="514" index="5" >}}
 
 <div class="br"></div>
 
@@ -111,7 +111,7 @@ So, will the user interface ultimately end up being a presentation layer with al
 
 <div class="br"></div>
 
-{{< btm_canvas id="demo5" width="402" height="514" index="4" >}}
+{{< btm_canvas id="demo5" aspectratio="1.25" width="402" height="514" index="4" >}}
 
 <div class="br"></div>
 

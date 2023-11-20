@@ -31,7 +31,6 @@
   border-radius: 5px;
   background-color: var(--white-95);
   transition: background-color 0.1s ease-in-out;
-  min-height: 574px;
 }
 
 #demo1 {
