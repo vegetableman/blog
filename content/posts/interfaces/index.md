@@ -46,7 +46,7 @@ The next section explores *one* of many possible solutions to the problems menti
 
 Now, let's talk about a possible solution, keeping in mind the existing interface and ecosystem cannot be revamped lest the business alienates its existing users. 
 
-📝 *The screencasts below are not videos but animated on canvas. Recorded and generated through a little tool I built called <a target="_blank" href="https://github.com/vegetableman/betamax">Betamax</a>. Check it out! ✨*
+📝 *The screencasts below are not videos but animated on canvas. Recorded and generated through a little tool I built called <a target="_blank" href="/recording-and-generating-animated-screencasts-within-the-browser">Betamax</a>. Check it out! ✨*
 
 Below are the characteristics of the navigation panel: 
 
