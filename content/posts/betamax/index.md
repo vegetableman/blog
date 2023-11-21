@@ -133,7 +133,7 @@ So, what did I do?... Easy! I became Quicksilver and slowed down time.
   <figcaption>Slowed down transitions <a href="#4">[4]</a></figcaption>
 </figure>
 
-So, if you are on a high DPI/Retina display, the sample demo above was made possible after slowing down the UI before recording i.e., by increasing the delay of the transitioning elements in the UI (in one case, from `300ms` to `600ms`) and then by scaling down the delay property of all the differences in the timeline by a factor of `0.4`, thereby speeding up the animation [[5]](#5). 
+So, if you are on a high DPI/Retina display, the sample demo above was made possible after slowing down the UI before recording i.e., by increasing the delay of the transitioning elements in the UI (in one case, from `300ms` to `600ms`) and then by scaling down the delay property of all the differences in the timeline by a factor of `0.4`, thereby speeding up the animation. 
 
 
 ## So, will Betamax ever replace &lt;video&gt;HS?
@@ -157,5 +157,3 @@ Notes:
 <a name="3">[3]</a>: Thanks ChatGPT for this definition!
 
 <a name="4">[4]</a>: Unmute for a surprise!
-
-<a name="5">[5]</a>: This was much more reliable than fiddling with frame rate.
