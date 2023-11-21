@@ -38,8 +38,6 @@ So, when I needed to display short screencasts for my recent <a target="_blank" 
 
 Below is a demonstration of the tool generating one of the required demo's. 
 
-<div class="br"></div>
-
 <figure align="center" style="aspect-ratio:1.60"> 
   <video class="lazy" autoplay playsinline muted controls width="720">
     <source data-src="betamax.webm" type="video/mp4"/>
