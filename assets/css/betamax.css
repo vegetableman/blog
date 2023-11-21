@@ -1,37 +1,92 @@
-.quote {
-  width: fit-content;
-}
-
 .ptg {
   float: right;
 }
 
 canvas {
   max-width: 100%;
-  border-radius: .3125rem;
 }
 
 figcaption a {
   text-decoration: none;
 }
 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+picture img {
+  max-width: 100%;
+}
+
+.quote {
+  width: fit-content;
+}
+
 .post__header__hero {
   background: linear-gradient(to top, #ffcbe5 0%, #b8d2f7 100%);
 }
 
-:root[data-theme="dark"] .post__header__hero {
+.post__header__hero svg {
+  max-width: 80%;
+}
+
+html[data-theme="dark"] .post__header__hero {
   background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
 }
 
-:root[data-theme="dark"] .post__header__hero > svg path {
+html[data-theme="dark"] .post__header__hero > svg path {
   fill: darkslateblue;
-}
-
-.betamax-demo {
-  width: 100%;
 }
 
 .journey-demo {
   background: var(--white-95);
   text-align: center;
+}
+
+.zoomer {
+  position: relative; 
+  height: 31.25rem; 
+  overflow: hidden; 
+  background-color: #555;
+}
+
+.figcaption--small {
+  font-family: var(--font-text);
+  font-size: .75rem;
+}
+
+.zoom-controls {
+  position: absolute;
+  bottom: 0;
+  padding: 0 0 .625rem .9375rem;
+}
+
+.zoom-btn {
+  background: none;
+  border: 0;
+  padding: 0 .125rem;
+  cursor: pointer;
+}
+
+.zoom-btn svg {
+  stroke: var(--white-87);
+}
+
+.zoom-btn:hover svg {
+  stroke: var(--white);
+}
+
+.zoom-btn:active {
+  transform: scale(0.95);
+}
+
+.timeline {
+  width: 100%;
+  margin: 0;
+  overflow: auto;
+}
+
+.post__content h2 {
+  font-size: 2.25rem;
 }

@@ -34,7 +34,7 @@
     if (localStorage.getItem('theme')) {
         document.documentElement.dataset.theme = localStorage.getItem('theme');
     }
-
+    
     document.addEventListener('alpine:init', () => {
         Alpine.store('timeline', {
             init() {

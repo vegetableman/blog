@@ -1,0 +1,65 @@
+{{ $x := .Get "x" }}
+{{ $2x := .Get "2x" }}
+
+<script>
+  function startDrag() {
+    console.log('startDrag', this.$event)
+    if(this.$event.target !== this.$refs.packedImage) return; 
+    console.log('startDrag:2')
+    this.isMousedown = true; 
+    this.currentY = new WebKitCSSMatrix(getComputedStyle(this.$el).transform).m42; 
+    const clientY = this.$event.type.startsWith('touch') ? this.$event.touches[0].clientY:  this.$event.clientY;
+    console.log(clientY);
+    this.offsetY = clientY - this.currentY;
+  }
+
+  function startMove() {
+    if(!this.isMousedown) return; 
+    console.log('startMove');
+    const clientY = this.$event.type.startsWith('touch') ? this.$event.touches[0].clientY:  this.$event.clientY;
+    console.log(clientY);
+    const d = clientY - this.offsetY;
+    if (d/this.scale > 220 || d/this.scale < -220) {
+      return;
+    }
+    this.currentY = d;
+  }
+
+  function stopDrag() {
+    this.isMousedown = false;
+  }
+</script>
+
+<figure x-data="{
+  scale: 0.9,
+  offsetY: 0,
+  currentY: 0,
+  isMousedown: false
+}">
+  <div class="zoomer" align="center">
+    <img
+     x-ref="packedImage"
+     x-on:mousedown.prevent="startDrag"
+     x-on:touchstart.prevent="startDrag"
+     x-on:mouseup.document="stopDrag" 
+     x-on:touchend.document="stopDrag" 
+     x-on:mousemove.document="startMove"
+     x-on:touchmove.document="startMove" 
+     x-bind:style="{
+      'object-fit': 'scale-down',
+      cursor: 'grab',
+      height: '500px',
+      transform: `translateY(${currentY}px) scale(${scale})`
+    }" 
+    :x-init="$el.src = window.devicePixelRatio > 1.3 ? '{{ $2x }}': '{{ $x }}'"/>
+    <div class="zoom-controls">
+      <button class="zoom-btn" x-on:click="scale = Math.max(0.5, scale - 0.5)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zoom-out"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+      </button>
+      <button class="zoom-btn" x-on:click="scale = Math.min(scale + 0.5, 5)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zoom-in"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+      </button>
+    </div>
+  </div>
+  <figcaption>packed_image.png</figcaption>
+</figure>

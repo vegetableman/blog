@@ -78,7 +78,7 @@ body {
   color: var(--color-text);
   line-height: var(--ru);
   -webkit-font-smoothing: antialiased;
-  text-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
 }
 
 a[href] {
@@ -138,7 +138,7 @@ p {
 [data-theme="dark"] h3,
 [data-theme="dark"] p {
   -webkit-font-smoothing: antialiased;
-  text-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
 }
 
 time {
@@ -430,6 +430,7 @@ a[href^="#"], a[name] {
   font-family: var(--font-text);
   line-height: 1.6;
   text-wrap: pretty;
+  word-wrap: break-word;
   color: var(--color-text);
 }
 

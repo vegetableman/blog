@@ -6,12 +6,10 @@
       var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
         entries.forEach(function(video) {
           if (video.isIntersecting) {
-            console.log('is intersection')
             for (var source in video.target.children) {
               var videoSource = video.target.children[source];
               if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
                 videoSource.src = videoSource.dataset.src;
-                console.log('src set');
               }
             }
   

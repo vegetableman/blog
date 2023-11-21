@@ -1,9 +1,7 @@
 <script type="text/javascript">
-  const delayScale = 0.9;
-  let timer = null;
-
-  function animate(img, timeline, element) {
+  function animate(img, timeline, element, delayScale = 0.9) {
     let i = 0;
+    let timer;
 
     function f() {
       const frame = i++ % timeline.length;
@@ -28,7 +26,7 @@
     f();
   }
 
-  function setAnimation(imgUrl, timeline, canvasId) {
+  function setAnimation(imgUrl, timeline, canvasId, delayScale) {
     const img = new Image();
     img.onload = function()
     {
@@ -37,7 +35,7 @@
         const blits = timeline[0].blit[0];
         canvas.width = blits[2];
         canvas.height = blits[3];
-        animate(img, timeline, canvas);
+        animate(img, timeline, canvas, delayScale);
       }
     };
     img.src = imgUrl;

@@ -11,6 +11,87 @@
     return isHighDPI() ? 'packed_image@2x.png': 'packed_image.png';
   }
 
+  function demo(id, cIndex, height, ldHeight) {
+    return {
+      id,
+      cIndex,
+      selectedIndex: 0,
+      showOverlay: false, 
+      activeOverlay: [],
+      t: {timer: null, delay_scale: null},
+      played: false,
+      loading: false,
+      playNext: false,
+      height,
+      ldHeight,
+      play: function(isIntersect) {
+        if (isIntersect) {
+          this.loading = true;
+        }
+        this.showOverlay = false;
+        this.activeOverlay = [];
+        debugger;
+        const { series } = this.$store.timeline;
+        if (!series.length) {
+          return;
+        }
+        const { children, delay_scale } = series[this.cIndex];
+        this.t.delay_scale = delay_scale;
+        const child = children?.[this.selectedIndex];
+        const overlays = series[this.cIndex].overlays ?? child?.overlays;
+        const addText = (index) => {
+          setTimeout(() => {
+            this.activeOverlay.push(index);
+          }, index * 4 * 100);
+        }
+        const animate = (img_url, timeline, anim, delay_scale) => {
+          if (delay_scale) {
+            this.t['delay_scale'] = delay_scale;
+          }
+          setAnimation(img_url, timeline, this.$refs.canvas, () => {
+            this.loading = false;
+            let child = children?.[this.selectedIndex + 1];
+            if (child) {
+              const img = new Image();
+              img.src = child.img_url;
+            }
+            if (!this.playNext) {
+              this.$refs.demo.style.minHeight = this.$refs.demo.offsetHeight + 'px';
+              return;
+            }
+            this.playNext = false;
+            this.$refs.canvas.style.height = this.$refs.canvas.offsetHeight + 'px';
+            this.$refs.canvas.style.objectFit = 'contain';
+            this.$refs.demo.style.backgroundColor = '#1a1a1a';
+          },
+          (c, frame, end) => {
+            this.showOverlay = true;
+            const overlays = anim.overlays ?? child?.overlays;
+            for (let j = 0; j < overlays?.length; j++) {
+              if (overlays[j].frame === frame) {
+                this.activeOverlay.push(j)
+              } else if (overlays[j].frameEnd === frame) {
+                this.activeOverlay = [];
+              } else if (overlays[j].frame === 'end' && end) {
+                addText(j);
+              }
+            }
+            const { next } = anim;
+            if (next && end) {
+              this.playNext = true;
+              animate(next[0].img_url, next[0].timeline, next);
+            } 
+            if (end) {
+              this.played = true;
+            }
+          }, this.t);
+        };
+        this.$refs.canvas.style.height = 'auto';
+        animate(child ? child.img_url: series[this.cIndex].img_url, child ? child.timeline: series[this.cIndex].timeline, series[this.cIndex], child ? child.delay_scale: null);
+      }
+    }
+  }
+
   const init = () => {
     script = document.createElement('script');
     script.type = "text/javascript";

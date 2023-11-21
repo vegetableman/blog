@@ -4,89 +4,13 @@
 {{ $index := .Get "index" }}
 {{ $id := .Get "id" }}
 {{ $aspectratio := .Get "aspectratio" }}
-<div x-data="{
-  id: '{{ $id }}',
-  cIndex: {{ $index }},
-  selectedIndex: 0,
-  showOverlay: false, 
-  activeOverlay: [],
-  t: {timer: null, delay_scale: null},
-  played: false,
-  loading: false,
-  playNext: false,
-  height: {{ $height }},
-  ldHeight: {{ if $ldHeight }} {{ $ldHeight }} {{ else }} null {{ end }},
-  play: function(isIntersect) {
-    if (isIntersect) {
-      this.loading = true;
-    }
-    this.showOverlay = false;
-    this.activeOverlay = [];
-    const { series } = $store.timeline;
-    if (!series.length) {
-      return;
-    }
-    const { children, delay_scale } = series[this.cIndex];
-    this.t.delay_scale = delay_scale;
-    const child = children?.[this.selectedIndex];
-    const overlays = series[this.cIndex].overlays ?? child?.overlays;
-    const addText = (index) => {
-      setTimeout(() => {
-        this.activeOverlay.push(index);
-      }, index * 4 * 100);
-    }
-    const animate = (img_url, timeline, anim, delay_scale) => {
-      if (delay_scale) {
-        this.t['delay_scale'] = delay_scale;
-      }
-      setAnimation(img_url, timeline, $refs.canvas, () => {
-        this.loading = false;
-        let child = children?.[this.selectedIndex + 1];
-        if (child) {
-          const img = new Image();
-          img.src = child.img_url;
-        }
-        if (!this.playNext) {
-          $refs.demo.style.minHeight = $refs.demo.offsetHeight + 'px';
-          return;
-        }
-        this.playNext = false;
-        $refs.canvas.style.height = $refs.canvas.offsetHeight + 'px';
-        $refs.canvas.style.objectFit = 'contain';
-        $refs.demo.style.backgroundColor = '#1a1a1a';
-      },
-      (c, frame, end) => {
-        this.showOverlay = true;
-        const overlays = anim.overlays ?? child?.overlays;
-        for (let j = 0; j < overlays?.length; j++) {
-          if (overlays[j].frame === frame) {
-            this.activeOverlay.push(j)
-          } else if (overlays[j].frameEnd === frame) {
-            this.activeOverlay = [];
-          } else if (overlays[j].frame === 'end' && end) {
-            addText(j);
-          }
-        }
-        const { next } = anim;
-        if (next && end) {
-          this.playNext = true;
-          animate(next[0].img_url, next[0].timeline, next);
-        } 
-        if (end) {
-          this.played = true;
-        }
-      }, this.t);
-    };
-    $refs.canvas.style.height = 'auto';
-    animate(child ? child.img_url: series[this.cIndex].img_url, child ? child.timeline: series[this.cIndex].timeline, series[this.cIndex], child ? child.delay_scale: null);
-  }
-}">
+<div style="aspect-ratio: {{ $aspectratio }}" x-data="demo('{{ $id }}', {{ $index }}, {{ $height }}, {{ $ldHeight }})">
   <div class="btm-demo" x-bind:id="id" x-ref="demo" x-init="$watch('$store.timeline.series', value => value.length && loading && play())" x-intersect.full.once="!played && play(true)" @resize.window="$refs.demo.style.minHeight = 'auto'; $nextTick(() => { $refs.demo.style.minHeight = $refs.demo.offsetHeight + 'px';});">
     <template x-if="loading">
       <div class="btm-loader">
       </div>
     </template>
-    <canvas style="aspect-ratio: {{ $aspectratio }}" x-ref="canvas" class="btm-canvas" :class="cIndex > 0 ? 'btm-canvas--panel': ''" width="{{ $width }}" x-bind:height="(window.devicePixelRatio < 1.3 && ldHeight ? ldHeight: height)"></canvas>
+    <canvas x-ref="canvas" class="btm-canvas" :class="cIndex > 0 ? 'btm-canvas--panel': ''" width="{{ $width }}" x-bind:height="(window.devicePixelRatio < 1.3 && ldHeight ? ldHeight: height)"></canvas>
     <template x-if="showOverlay">
       <ul x-data="{ list: $store.timeline.series[cIndex].children ? $store.timeline.series[cIndex].children[selectedIndex].overlays: $store.timeline.series[cIndex].overlays }">
         <template x-for="(item, i) in list">
