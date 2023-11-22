@@ -100,9 +100,9 @@
     script = document.createElement('script');
     script.type = "text/javascript";
     if (isHighDPI()) {
-      script.src = "{{ $jsResource2x.RelPermalink | absURL }}";  
+      script.src = "{{ $jsResource2x.RelPermalink | absURL }}?v=1";  
     } else {
-      script.src = "{{ $jsResource.RelPermalink | absURL }}"
+      script.src = "{{ $jsResource.RelPermalink | absURL }}?v=1"
     }
     document.head.append(script);
     script.onload = () => {
