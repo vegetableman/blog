@@ -1,6 +1,6 @@
 ---
 title: "Proposal for a navigation panel for complex (or perhaps bloated) admin interfaces"
-date: 2023-10-04T20:42:44+05:30
+date: 2023-11-20T20:42:44+05:30
 css: "css/interfaces.css"
 hero: "/static/interfaces/hero.svg"
 ---

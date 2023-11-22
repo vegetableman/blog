@@ -1,6 +1,6 @@
 ---
 title: "Recording and generating animated screencasts within the browser"
-date: 2023-10-05T00:42:44+05:30
+date: 2023-11-21T00:42:44+05:30
 hero: "/static/betamax/hero.svg"
 css: "css/betamax.css"
 ---
@@ -13,7 +13,6 @@ css: "css/betamax.css"
   <span class="ptg">- <small>Don Draper</small></span>
 </p>
 
-<div class="br"></div>
 <div class="br"></div>
 <div class="br"></div>
 
@@ -38,20 +37,18 @@ So, when I needed to display short screencasts for my recent <a target="_blank" 
 
 Below is a demonstration of the tool generating one of the required demo's. 
 
-<figure align="center" style="aspect-ratio:1.60"> 
-  <video class="lazy" autoplay playsinline muted controls width="720">
-    <source data-src="betamax.webm" type="video/mp4"/>
+<figure align="center" style="aspect-ratio:1.79"> 
+  <video playsinline muted controls width="720">
+    <source src="betamax.webm" type="video/webm"/>
   </video>
   <figcaption>Generating a demo</figcaption>
 </figure>
-
-<div class="br"></div>
 
 The tool is called <a>*Betamax*</a>. I know, comical as it may sound but it's been named that for a reason as it's not a replacement for `<video>` but merely an alternative medium that sort of died off along with the post Jon wrote eons ago. A relic of the past not seen elsewhere but the home pages of <a href="https://www.sublimetext.com/">amazing</a> <a target="_blank" href="https://www.sublimemerge.com/">products</a> from the mentioned author. It does sound cool though!
 
 Below is the output generated from the tool (stored in zip): 
 
-<figure align="center" style="aspect-ratio:1.24">
+<figure align="center" style="aspect-ratio:1.29">
   <div class="journey-demo">
   <canvas x-data id="btm_journey_1" width="402" height="514" :x-init="
     const ishighDPI = window.devicePixelRatio > 1.3;
@@ -65,11 +62,9 @@ Below is the output generated from the tool (stored in zip):
 </figure>
 
 <div class="br"></div>
-<div class="br"></div>
 
 {{< zoomer x="demos/journey_1/packed_image.png" 2x="demos/journey_1/packed_image@2x.png">}}
 
-<div class="br"></div>
 <div class="br"></div>
 
 <figure>
@@ -118,7 +113,7 @@ So now, without significantly altering the python encoder (possibly introduce <a
 
 <div align="center">
   <video class="lazy" autoplay playsinline muted loop height="200" width="480">
-    <source data-src="quicksilver.webm" type="video/mp4"/>
+    <source data-src="quicksilver.webm" type="video/webm"/>
   </video>
 </div>
 
@@ -126,7 +121,7 @@ So, what did I do?... Easy! I became Quicksilver and slowed down time.
 
 <figure align="center" x-data="{}" style="aspect-ratio:1.60">
     <video class="lazy" playsinline muted width="100%" poster="bottle.png" controls x-on:ended="$el.autoplay = false; $el.load()">
-      <source data-src="bottle.webm" type="video/mp4"/>
+      <source data-src="bottle.webm" type="video/webm"/>
     </video>
   <figcaption>Slowed down transitions <a href="#4">[4]</a></figcaption>
 </figure>

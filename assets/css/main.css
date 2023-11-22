@@ -323,6 +323,7 @@ a[href^="#"], a[name] {
 .br {
   display: flex;
   margin-bottom: 1.25rem;
+  height: .0063rem;
 }
 
 .listing {
