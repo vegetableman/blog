@@ -130,7 +130,6 @@ And do I want to see this implemented in Shopify or other admin apps? No. I love
 
 **To summarise**: A navigation panel will help users navigate the interface, just like a GPS would, without limiting agency.
 
-
 <div class="br"></div>
 <div class="br"></div>
 
