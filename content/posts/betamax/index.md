@@ -141,7 +141,10 @@ Checkout the source code and open issues here: https://github.com/vegetableman/b
 
 {{< lazy_loader >}}
 
-Notes:
+<div class="br"></div>
+<div class="br"></div>
+
+### Notes:
 
 <a name="1">[1]</a>: I would highly recommend reading it.
 

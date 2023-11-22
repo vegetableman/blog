@@ -130,6 +130,10 @@ And do I want to see this implemented in Shopify or other admin apps? No. I love
 
 **To summarise**: A navigation panel will help users navigate the interface, just like a GPS would, without limiting agency.
 
+
+<div class="br"></div>
+<div class="br"></div>
+
 ### Notes:  
 
 <a name="1">[1]</a>: Now, the productivity tools mentioned might seem to be on a *road to bloatware* but as long as they are appreciated for what they do best with everything else neatly tucked away under some menu or */slash*, they should be a-ok.
