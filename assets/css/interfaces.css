@@ -100,12 +100,12 @@
 }
 
 .overlay-item--1-1 {
-  top: 46%;
-  right: 10%;
+  top: 47%;
+  right: 8%;
 }
 
 .overlay-item--1-2 {
-  top: 68.5%;
+  top: 68%;
   right: 1%;
 }
 
@@ -113,11 +113,8 @@
   .overlay-item {
     font-size: 0.75rem;
   }
-  .overlay-item--1-1 {
-    top: 47%;
-  }
   .overlay-item--1-2 {
-    top: 69.5%;
+    top: 70%;
   }
 }
 
@@ -125,17 +122,11 @@
   .overlay-item {
     font-size: 0.875rem;
   }
-  .overlay-item--1-2 {
-    top: 70.5%;
-  }
 }
 
 @media screen and (min-width: 600px) {
   .overlay-item {
     font-size: 1rem;
-  }
-  .overlay-item--1-1 {
-    right: 7%;
   }
 }
 
@@ -143,18 +134,18 @@
   .overlay-item {
     font-size: 1.1875rem;
   }
-  .overlay-item--1-0,
-  .overlay-item--1-2 {
-    right: 7%;
-  }
-  .overlay-item--1-1 {
-    right: 14%;
-  }
+}
+
+.overlay-list--2 {
+  position: absolute;
+  bottom: 1.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: center
 }
 
 .overlay-item--2-0 {
-  bottom: 5%;
-  right: 38%;
+  position: static;
 }
 
 .overlay-item .icon {
