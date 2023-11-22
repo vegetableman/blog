@@ -18,7 +18,7 @@ This category includes the tiniest of applications like a QR code scanner that d
 
 The comprehensive tools mentioned above could also be described as <strong>*journey tools*</strong> allowing the user to embark on a journey from a lowly begineer to an expert. Granted, you may face hurdles and seek documentation, tutorials, courses or guidance from your coworkers but it's all part of the journey as you play, make mistakes, undo those mistakes, learn and play all over again. rinse and repeat. circle of life.
 
-### "Not meant for play."
+### "Not meant for play.":
 
 I don't think *play* is part of the lexicon for these applications. It's just *admin stuff*. The applications on this category typically include dashboard applications that integrate a multitude of features, each application on their own right, in to one. Their interfaces are oriented towards business verticals or information management &mdash; aka *something critical*. 
 
