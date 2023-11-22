@@ -104,7 +104,7 @@ Out in the real world, when you are travelling and get lost somewhere, it's reas
 
 <div class="br"></div>
 
-With AI chatbots at large, it has never been easier to create a humanized guide. It could also assist users on trivial tasks that may appear non-trivial — like the one posted on the forum link above. An example of an assistant from Shopify can be seen <a target="_blank" href="https://www.shopify.com/in/magic">here</a>.
+With AI chatbots at large, it has never been easier to create a humanized guide. It could also assist users on trivial tasks that may appear non-trivial — like the one posted on the forum link above [[4]](#4). An example of an assistant from Shopify can be seen <a target="_blank" href="https://www.shopify.com/in/magic">here</a>.
  
 Now, should an AI assistant automate away all the UI actions for the user? It will, if it can. I do see it being particularily useful in scenarios where the user would rather type through a problem than deal with some complex UI soup.
 So, will the user interface ultimately end up being a presentation layer with all the WRITE actions typed by the user instead of clicking through buttons? I don't think so. In order to use any AI chatbot effectively, the user has to be able to first frame the question appropriately, inevitably requiring them to have some experience with the product interface. In other words, the user interface will always remain central to the product usage.
@@ -138,6 +138,8 @@ And do I want to see this implemented in Shopify or other admin apps? No. I love
 
 <a name="3">[3]</a>: You could argue that Shopify having an onboarding wizard does in fact make it a *journey tool*, atleast for  beginners. I beg to differ. The wizard is displayed as a completion marker, only pointing me to their documentation at each step, whereas the video tutorial mentioned above was much more helpful compared to the wizard. 
 
-<a name="4">[4]</a>: A cursory glance at the sheer number of tutorials for the shopify web application compared to the mobile app confirmed that for me.
+<a name="4">[4]</a>: For non-trivial or custom tasks, the customer can always opt for Shopify experts.
+
+<a name="5">[4]</a>: A cursory glance at the sheer number of tutorials for the shopify web application compared to the mobile app confirmed that for me.
 
 {{< btm_script >}}
