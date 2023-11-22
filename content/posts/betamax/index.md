@@ -89,7 +89,7 @@ So, did I succeed in building this tool? Not entirely. I managed to generate the
 
 When I built it initially, I was quite pleased with it's performance on my linux machine. I got optimistic about it and ended up refining it's UI, handling edge cases and what not. What I didn't anticipate was the bitter pill that I had to swallow after running it on Mac. Why is that? well, it all has to do with pixel density or DPR (Device Pixel Ratio). 
 
-I am running my Linux on a device with a screen that maps it's pixels 1-to-1 to device pixels (CSS pixels). In such a scenario, the recorder captures the required region  with no noticeable effects on the frame rate of the page being recorded and the generation of the packed image through pyodide runs with relative ease. However, recording the same demo on a high DPI/Retina display causes the size of the captured image increase by a factor based on the DPR and with this increase, we also start seeing noticeable effects on the page being recorded affecting it's frame rate &mdash; which is bad if you wish to capture smooth transitions. 
+I am running my Linux on a device with a screen that maps it's pixels 1-to-1 to device pixels (CSS pixels). In such a scenario, the recorder captures the required region  with no noticeable effects on the frame rate of the page being recorded and the generation of the packed image through pyodide runs with relative ease. However, recording the same demo on a high DPI/Retina display causes the size of the captured image increase by a factor based on the DPR and with this increase, we also start seeing noticeable effects on the page being recorded affecting it's frame rate &mdash; which is bad if you wish to capture smooth transitions. I will also add, as a developer who has been around on the front-end space dealing with @2x images, I can still surprise myself by own naivety.
 
 <figure align="center">
   <picture>
@@ -152,6 +152,6 @@ Notes:
 
 <a name="2">[2]</a>: `MediaRecorder` does not support lossless encoding.
 
-<a name="3">[3]</a>: Thanks ChatGPT for this definition!
+<a name="3">[3]</a>: Thanks ChatGPT for this definition! You scratch my back... I scratch yo.. maybe not?
 
 <a name="4">[4]</a>: Unmute for a surprise!
