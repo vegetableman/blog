@@ -10,6 +10,7 @@
   const packedImage = () => {
     return isHighDPI() ? 'packed_image@2x.png': 'packed_image.png';
   }
+  const VERSION = 1.1;
 
   function demo(id, cIndex, height, ldHeight) {
     return {
@@ -53,11 +54,11 @@
             let child = children?.[this.selectedIndex + 1];
             if (child) {
               const img = new Image();
-              img.src = child.img_url;
+              img.src = `${child.img_url}?v=${VERSION}`;
             }
             if (anim.next?.[0]) {
               const img = new Image();
-              img.src = anim.next[0].img_url;
+              img.src = `${anim.next[0].img_url}?v=${VERSION}`;
             }
             if (!this.playNext) {
               this.$refs.demo.style.minHeight = this.$refs.demo.offsetHeight + 'px';
@@ -100,9 +101,9 @@
     script = document.createElement('script');
     script.type = "text/javascript";
     if (isHighDPI()) {
-      script.src = "{{ $jsResource2x.RelPermalink | absURL }}?v=1";  
+      script.src = "{{ $jsResource2x.RelPermalink | absURL }}?v="+ VERSION;  
     } else {
-      script.src = "{{ $jsResource.RelPermalink | absURL }}?v=1"
+      script.src = "{{ $jsResource.RelPermalink | absURL }}?v="+ VERSION;
     }
     document.head.append(script);
     script.onload = () => {
@@ -245,7 +246,7 @@
         loadCallback();
       }
     };
-    img.src = img_url;
+    img.src = `${img_url}?v=${VERSION}`;
   }
 
   document.addEventListener('alpine:init', init);
