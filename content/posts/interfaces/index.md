@@ -92,7 +92,7 @@ List of actions update based on the current page — keeping the panel relevant 
 
 <div class="br"></div>
 
-This requires backend changes but the list of undo-able actions could possibly be limited to last 10 changes. 
+Besides showing history of actions, it would be great if the past actions could be undo'd. This requires backend changes but the list of undo-able actions could possibly be limited to last 10 changes. 
 
 Out in the real world, when you are travelling and get lost somewhere, it's reassuring to know that you can always go back to a familiar place and start all over again. Similarily, the user could always go back to a previous state and start over. 
 
@@ -115,7 +115,7 @@ So, will the user interface ultimately end up being a presentation layer with al
 
 <div class="br"></div>
 
-Are there other potential ways to humanize such applications besides video tutorials on youtube? I do like the idea of a ginormously large cursor pointing at things I am supposed to click to get the job done, notwithstanding the disconcerting visual of someone hand/cursor-holding the user.
+Are there other potential ways to humanize such applications besides video tutorials on youtube? I do like the idea of an oversized cursor pointing at things I am supposed to click to get the job done, notwithstanding the disconcerting visual of someone hand/cursor-holding the user.
 
 
 ## Conclusion
