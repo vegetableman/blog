@@ -112,7 +112,7 @@ So now, without significantly altering the python encoder (possibly introduce <a
 
 
 <div align="center">
-  <video class="lazy" autoplay playsinline muted loop height="200" width="480">
+  <video class="lazy" autoplay="" playsinline="" loop height="200" width="480" muted="" style="aspect-ratio:2.4">
     <source data-src="quicksilver.webm" type="video/webm"/>
   </video>
 </div>

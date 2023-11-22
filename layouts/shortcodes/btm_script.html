@@ -28,6 +28,7 @@
         if (isIntersect) {
           this.loading = true;
         }
+        this.$refs.demo.style.backgroundColor = 'var(--white-95)';
         this.showOverlay = false;
         this.activeOverlay = [];
         const { series } = this.$store.timeline;
