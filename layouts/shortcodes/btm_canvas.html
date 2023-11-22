@@ -5,7 +5,7 @@
 {{ $id := .Get "id" }}
 {{ $aspectratio := .Get "aspectratio" }}
 <div style="aspect-ratio: {{ $aspectratio }}" x-data="demo('{{ $id }}', {{ $index }}, {{ $height }}, {{ $ldHeight }})">
-  <div class="btm-demo" x-bind:id="id" x-ref="demo" x-init="$watch('$store.timeline.series', value => value.length && loading && play())" x-intersect.full.once="!played && play(true)" @resize.window="$refs.demo.style.minHeight = 'auto'; $nextTick(() => { $refs.demo.style.minHeight = $refs.demo.offsetHeight + 'px';});">
+  <div class="btm-demo" x-bind:id="id" x-ref="demo" x-init="$watch('$store.timeline.series', value => value.length && loading && play())" x-intersect.half.once="!played && play(true)" @resize.window="$refs.demo.style.minHeight = 'auto'; $nextTick(() => { $refs.demo.style.minHeight = $refs.demo.offsetHeight + 'px';});">
     <template x-if="loading">
       <div class="btm-loader">
       </div>

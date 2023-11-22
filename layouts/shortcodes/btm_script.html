@@ -54,6 +54,10 @@
               const img = new Image();
               img.src = child.img_url;
             }
+            if (anim.next?.[0]) {
+              const img = new Image();
+              img.src = anim.next[0].img_url;
+            }
             if (!this.playNext) {
               this.$refs.demo.style.minHeight = this.$refs.demo.offsetHeight + 'px';
               return;
@@ -79,7 +83,7 @@
             if (next && end) {
               this.playNext = true;
               animate(next[0].img_url, next[0].timeline, next);
-            } 
+            }
             if (end) {
               this.played = true;
             }
