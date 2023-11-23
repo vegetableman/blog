@@ -1,9 +1,13 @@
+.post__header__hero {
+  margin-bottom: 2.5rem;
+}
+
 .post__header__hero .B {
   --hero-fill: var(--white);
   fill: var(--hero-fill);
 }
 .post__header__hero svg {
-  max-width: 464px;
+  max-width: 29rem;
 }
 :root[data-theme="dark"] .post__header__hero .B {
   --hero-fill: var(--black-16);
