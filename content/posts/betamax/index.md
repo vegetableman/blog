@@ -51,7 +51,7 @@ Below is the output generated from the tool (stored in zip):
 <figure align="center" style="aspect-ratio:1.29">
   <div class="google-demo">
   <canvas x-data id="btm_google" width="713" height="719" :x-init="
-    fetch('demos/google/timeline.json').then(async (res) => {
+    fetch('demos/google/timeline.json?v=1').then(async (res) => {
       const tt = await res.json();
       setAnimation('demos/google/packed_image.png', tt, 'btm_google', 0.9);
     });
