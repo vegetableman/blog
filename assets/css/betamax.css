@@ -40,8 +40,8 @@ html[data-theme="dark"] .post__header__hero > svg path {
   fill: darkslateblue;
 }
 
-.journey-demo {
-  background: var(--white-95);
+.google-demo {
+  background: var(--white);
   text-align: center;
 }
 
