@@ -57,7 +57,7 @@ Below is the output generated from the tool (stored in zip):
     });
   "></canvas>
   </div>
-  <figcaption>Sample demo</figcaption>
+  <figcaption>Sample demo (rendered on canvas)</figcaption>
 </figure>
 
 <div class="br"></div>
