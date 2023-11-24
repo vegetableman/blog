@@ -20,9 +20,9 @@ The comprehensive tools mentioned above could also be described as <strong>*jour
 
 ### "Not meant for play.":
 
-I don't think *play* is part of the lexicon for these applications. The applications on this category typically include dashboard applications that integrate a multitude of features, each application on their own right, in to one. Their interfaces are oriented towards business verticals or information management &mdash; aka *something critical* and the users are generally non-technical users.
+I don't think *play* is part of the lexicon for these applications. The applications on this category typically include dashboard/admin applications that integrate a multitude of features, each application on their own right, in to one. Their interfaces are oriented towards business verticals or information management &mdash; aka *something critical*.
 
-Relatable examples include Shopify, Income Tax portal [[2]](#2), etc. Besides those, any application targeting a business vertical (banking, healthcare, etc.),  primarily used by employees of those businesses, will also end up in this category.
+Relatable examples include Shopify, Income Tax portal [[2]](#2), etc. Besides those, any application targeting a business vertical (banking, healthcare, etc.), primarily used by employees of those businesses, will also end up in this category.
 
 Firstly, what sets them apart from the above two categories is that they have documentation, tutorials, courses not only for guiding users but also as a prerequisite. In the absence of such prerequisite, a certain know-how is always expected from the end user.
 
