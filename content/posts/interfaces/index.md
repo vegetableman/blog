@@ -128,7 +128,7 @@ Is this a fixer-upper kind of solution? yes. In an ideal world, applications sho
 
 And do I want to see this implemented in Shopify or other admin apps? No. I love thinking about products and user interfaces. So for me, this was just a fun thought experiment. Is this is a substitute for youtube tutorials? of course not. When done right (as Shopify does), nothing can substitute those friendly faces. 
 
-**To summarise**: A navigation panel will help users navigate the interface, just like a GPS would, without limiting agency.
+**To summarise**: A navigation panel &mdash; like the one showcased &mdash; will help users navigate the interface, just like a GPS would, without limiting agency.
 
 <div class="br"></div>
 <div class="br"></div>
