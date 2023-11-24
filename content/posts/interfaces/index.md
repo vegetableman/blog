@@ -20,9 +20,9 @@ The comprehensive tools mentioned above could also be described as <strong>*jour
 
 ### "Not meant for play.":
 
-I don't think *play* is part of the lexicon for these applications. It's just *admin stuff*. The applications on this category typically include dashboard applications that integrate a multitude of features, each application on their own right, in to one. Their interfaces are oriented towards business verticals or information management &mdash; aka *something critical*. 
+I don't think *play* is part of the lexicon for these applications. The applications on this category typically include dashboard applications that integrate a multitude of features, each application on their own right, in to one. Their interfaces are oriented towards business verticals or information management &mdash; aka *something critical* and the users are generally non-technical users.
 
-Relatable examples include Shopify, Income Tax portal [[2]](#2), etc. Besides those, any application targeting a business vertical (banking, healthcare, etc.),  primarily used by employees of those businesses, will also end up in this category. 
+Relatable examples include Shopify, Income Tax portal [[2]](#2), etc. Besides those, any application targeting a business vertical (banking, healthcare, etc.),  primarily used by employees of those businesses, will also end up in this category.
 
 Firstly, what sets them apart from the above two categories is that they have documentation, tutorials, courses not only for guiding users but also as a prerequisite. In the absence of such prerequisite, a certain know-how is always expected from the end user.
 
@@ -42,7 +42,7 @@ The next section explores *one* of many possible solutions to the problems menti
 
 ## Proposal
 
-**Preface**: I am not a Shopify customer or developer. Although the idea for this article did stem from my brief yet poignant experience of using it to setup a test store. Shopify is a successful business with a thriving ecosystem for a reason and their product is merely used as a convenient reference for admin dashboards. I cometh in peace.
+**Preface**: I am not a Shopify customer or developer. Although the idea for this article did stem from my brief yet poignant experience of using it to setup a test store. Shopify is a successful business with a thriving ecosystem for a reason and their product is merely used as a convenient reference for admin dashboards. I cometh in peace :-).
 
 Now, let's talk about a possible solution, keeping in mind the existing interface and ecosystem cannot be revamped lest the business alienates its existing users. 
 
