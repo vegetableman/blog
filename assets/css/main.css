@@ -81,6 +81,17 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
 a[href] {
   color: var(--color-link);
 }
@@ -503,4 +514,22 @@ a[href^="#"], a[name] {
 
 [data-theme="dark"] .tint {
   --tint-color: hsla(15, 2%, 59%, 0.22);
+}
+
+footer {
+  margin: 1.25rem 0;
+}
+
+footer .st {
+  stroke: var(--white-83);
+}
+
+[data-theme="dark"] footer .st {
+  stroke:  var(--gray);
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

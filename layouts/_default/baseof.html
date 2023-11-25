@@ -7,7 +7,6 @@
       <div id="content">
         {{- block "main" . }}{{- end }}
       </div>
-      {{- partial "footer.html" . -}}
       <div class="placeholder"></div>
       <script>
           document.querySelector('.header__th_toggle').addEventListener('click', (e) => {
@@ -16,5 +15,6 @@
           });
       </script>
       </main>
+      {{- partial "footer.html" . -}}
     </body>
 </html>

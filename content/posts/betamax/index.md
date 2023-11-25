@@ -18,7 +18,7 @@ css: "css/betamax.css"
 
 {{< btm_animate >}}
 
-Reflecting on my quest for the past couple of months, I wonder if I should attribute it to a sentimental truism on *nostalgia* by the protagonist of a <a target="blank" href="https://en.wikipedia.org/wiki/Mad_Men">TV series</a> or is it just the profound need to build something? Regardless, here we are!
+Reflecting on my quest for the past couple of months, I wonder if I should attribute it to a sentimental truism on *nostalgia* by the protagonist of a <a target="blank" href="https://en.wikipedia.org/wiki/Mad_Men">TV series</a> or is it just the profound need to build something? Regardless, here we are.
 
 <figure>
   <canvas id="btm_sublime" width="800" height="446" x-data :x-init="
@@ -143,7 +143,7 @@ Checkout the source code and open issues here: https://github.com/vegetableman/b
 <div class="br"></div>
 <div class="br"></div>
 
-### Notes:
+### Footnotes:
 
 <a name="1">[1]</a>: I would highly recommend reading it.
 

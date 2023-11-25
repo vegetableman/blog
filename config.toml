@@ -7,7 +7,7 @@ pygmentsUseClasses = true
 
 [params]
   description = "Blog"
-  copyright = "Copyright © 2023 Vignesh Anand"
+  copyright = "© 2023 Vignesh Anand"
   highlight = true
 
 [menu]
