@@ -2,7 +2,7 @@
 title = "About me"
 +++
 
-<div class="tint-container">
+<div class="about__pic__container">
   <picture>
     <source srcset="images/large_me_vqoaor_c_scale,w_978.png" media="(min-width: 768px)">
     <img src="images/large_me_vqoaor_c_scale,w_661.png"  style="width: 100%">

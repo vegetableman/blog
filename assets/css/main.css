@@ -490,15 +490,9 @@ a[href^="#"], a[name] {
   }
 }
 
-.about__pic {
-  border-radius: 0.625rem;
-  margin: .625rem;
-  width: 100%;
-  filter: grayscale(50%);
-}
-
-.tint-container {
+.about__pic__container {
   position: relative;
+  aspect-ratio: 4.13;
 }
 
 .tint {
