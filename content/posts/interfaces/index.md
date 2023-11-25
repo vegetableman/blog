@@ -16,7 +16,7 @@ Examples include ecommerce stores, booking websites, mail clients, chat applicat
 
 This category includes the tiniest of applications like a QR code scanner that does one thing, all the way up to design tools like Figma, Photoshop and productivity tools like Slack, Notion [[1]](#1).
 
-The comprehensive tools mentioned above could also be described as <strong>*journey tools*</strong> allowing the user to embark on a journey from a lowly begineer to an expert. Granted, you may face hurdles and seek documentation, tutorials, courses or guidance from your coworkers but it's all part of the journey as you play, make mistakes, undo those mistakes, learn and play all over again. rinse and repeat. circle of life.
+The comprehensive tools mentioned above could also be described as <strong>*journey tools*</strong> allowing the user to embark on a journey from a lowly begineer to an expert. Granted, you may face hurdles and seek documentation, tutorials, courses or guidance from your coworkers but it's all part of the journey as you play, make mistakes, undo those mistakes, learn and play all over again. rinse and repeat. circle of life. ♻️
 
 ### "Not meant for play.":
 
@@ -42,7 +42,7 @@ The next section explores *one* of many possible solutions to the problems menti
 
 ## Proposal
 
-**Preface**: I am not a Shopify customer or developer. Although the idea for this article did stem from my brief yet poignant experience of using it to setup a test store. Shopify is a successful business with a thriving ecosystem for a reason and their product is merely used as a convenient reference for admin dashboards. I cometh in peace :-).
+**Preface**: I am not a Shopify customer or developer. Although the idea for this article did stem from my brief yet poignant experience of using it to setup a test store. Shopify is a successful business with a thriving ecosystem for a reason and their product is merely used as a convenient reference for admin dashboards. I cometh in peace :-) 🕊️ .
 
 Now, let's talk about a possible solution, keeping in mind the existing interface and ecosystem cannot be revamped lest the business alienates its existing users. 
 
@@ -128,7 +128,7 @@ Is this a fixer-upper kind of solution? yes. In an ideal world, applications sho
 
 And do I want to see this implemented in Shopify or other admin apps? No. I love thinking about products and user interfaces. So for me, this was just a fun thought experiment. Is this is a substitute for youtube tutorials? of course not. When done right (as Shopify does), nothing can substitute those friendly faces. 
 
-**To summarise**: A navigation panel &mdash; like the one showcased &mdash; will help users navigate the interface, just like a GPS would, without limiting agency.
+**To summarise**: A navigation panel &mdash; like the one showcased &mdash; will help users navigate the interface, just like a GPS would, without limiting agency ✌️.
 
 <div class="br"></div>
 <div class="br"></div>
