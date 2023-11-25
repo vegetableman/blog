@@ -18,13 +18,13 @@ This category includes the tiniest of applications like a QR code scanner that d
 
 The comprehensive tools mentioned above could also be described as <strong>*journey tools*</strong> allowing the user to embark on a journey from a lowly begineer to an expert. Granted, you may face hurdles and seek documentation, tutorials, courses or guidance from your coworkers but it's all part of the journey as you play, make mistakes, undo those mistakes, learn and play all over again. rinse and repeat. circle of life. ♻️
 
-### "Not meant for play.":
+### "I think I should check the manual first...":
 
-I don't think *play* is part of the lexicon for these applications. The applications on this category typically include dashboard/admin applications that integrate a multitude of features, each application on their own right, in to one. Their interfaces are oriented towards business verticals or information management &mdash; aka *something critical*.
+The applications on this category typically include dashboard/admin applications that integrate a multitude of features, each application on their own right, into one. Their interfaces are oriented towards business verticals or information management of some sort &mdash; aka *something critical*.
 
 Relatable examples include Shopify, Income Tax portal [[2]](#2), etc. Besides those, any application targeting a business vertical (banking, healthcare, etc.), primarily used by employees of those businesses, will also end up in this category.
 
-Firstly, what sets them apart from the above two categories is that they have documentation, tutorials, courses not only for guiding users but also as a prerequisite. In the absence of such prerequisite, a certain know-how is always expected from the end user.
+Firstly, what sets them apart from the above two categories is that they have documentation, tutorials, courses not only for guiding users but also as a prerequisite. In the absence of such prerequisite, a certain know-how is expected from the end user.
 
 <figure style="aspect-ratio:3.78">
   <picture>
@@ -36,13 +36,13 @@ Firstly, what sets them apart from the above two categories is that they have do
 
 For instance, the video tutorials like the one above from the official Shopify channel are immensely popular and have an incredible side effect of humanizing the brand to it's wide audience  &mdash; not to forget, youtube has become a tutorial wonderland for everything under the sun &mdash; however, if a product has tutorial for it's users on getting started *the right way*, you know it can get quite overwhelming for beginner users.
 
-Secondly, it bears mentioning that applications in this category cannot be used or described as *journey tools* [[3]](#3). Not only for the reasons listed above but also because the journey could abruptly land its target audience on too unknown of a terrain. For instance, in case of Shopify, you will inevitably find yourself in need of customization. There are levels to customization and guidance, however, if a regular store owner &mdash; who has no business learning web technology jargon &mdash; is expected to know that missing an `alt` text might impact their *SEO* or understand HTML/CSS for a minute change like changing the background color of a button as seen <a href="https://community.shopify.com/c/shopify-discussions/button-change-color-when-product-is-soldout/td-p/2013766" target="blank">in this question</a>, it can quickly become cumbersome.
+Secondly, it bears mentioning that applications in this category cannot be used or described as *journey tools* [[3]](#3). Not only for the reasons listed above but also because the journey could abruptly land its target audience on too unknown of a terrain. For instance, in case of Shopify, you will inevitably find yourself in need of customization. There are levels to customization and guidance, however, if a regular store owner &mdash; has to learn web technology jargon &mdash; and expected to know that missing an `alt` text might impact their *SEO* or understand HTML/CSS for a minute change like changing the background color of a button as seen <a href="https://community.shopify.com/c/shopify-discussions/button-change-color-when-product-is-soldout/td-p/2013766" target="blank">in this question</a>, it can quickly become cumbersome.
 
 The next section explores *one* of many possible solutions to the problems mentioned.
 
 ## Proposal
 
-**Preface**: I am not a Shopify customer or developer. Although the idea for this article did stem from my brief yet poignant experience of using it to setup a test store. Shopify is a successful business with a thriving ecosystem for a reason and their product is merely used as a convenient reference for admin dashboards. I cometh in peace :-) 🕊️ .
+**Preface**: I am not a Shopify customer or developer. Although the idea for this article did stem from my brief yet poignant experience of using it to setup a test store. Shopify is a successful business with a thriving ecosystem for a reason and their product is merely used as a convenient reference for admin dashboards.
 
 Now, let's talk about a possible solution, keeping in mind the existing interface and ecosystem cannot be revamped lest the business alienates its existing users. 
 
@@ -137,7 +137,7 @@ And do I want to see this implemented in Shopify or other admin apps? No. I love
 
 <a name="1">[1]</a>: Now, the productivity tools mentioned might seem to be on a *road to bloatware* but as long as they are appreciated for what they do best with everything else neatly tucked away under some menu or */slash*, they should be a-ok.
 
-<a name="2">[2]</a>: You could checkout the screenshots of the portal we use <a href="https://www.incometax.gov.in/iec/foportal/help/how-to-file-itr1-form-sahaj" target="_blank">here</a>.
+<a name="2">[2]</a>: You could checkout the screenshots of the portal we use <a href="https://www.incometax.gov.in/iec/foportal/help/how-to-file-itr1-form-sahaj" target="_blank">here</a>. I feel bad for lumping Shopify along with it.
 
 <a name="3">[3]</a>: You could argue that Shopify having an onboarding wizard does in fact make it a *journey tool*, atleast for  beginners. I beg to differ. The wizard is displayed as a completion marker, only pointing me to their documentation at each step, whereas the video tutorial mentioned above was much more helpful compared to the wizard. 
 
