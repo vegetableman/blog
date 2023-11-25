@@ -10,7 +10,7 @@ title = "About me"
   <div class="tint"></div>
 </div>
 
-Ah yes... the ubiquitous *About me*. It's a bit uncomfortable to talk about oneself — as I stare in to the void — however, this is a professional (semi-personal, maybe?) blog and I am a professional.
+It's a bit uncomfortable to talk about oneself (Surely, am not the only one) — as I stare in to the void — however, this is a professional (semi-personal, maybe?) blog and I am a professional (I'd like to think so).
 
 I love building products, be it for work or for a personal project. And when not building them, I find myself not too far from thinking about them. It's quite similar to world building in that it exercises all the faculties that one has to conjure up an imaginary world for all of us to inhabit and interact. 
 
@@ -21,8 +21,6 @@ Since the front-end largely dictates the user experience of a product, I love dr
 ### Other Interests:  
 
 I enjoy riding motorbikes — it's solitude in spectacular motion and working out. Between podcasts and blogs, I have finally managed to snuck in some books — currently reading "Fear and loathing at Rolling stone" by Hunter Thompson.
-
-Shelved interests (to keep myself accountable): Continue learning Japanese and pick up that dormant rusting sax.
 
 ### This blog:
 
