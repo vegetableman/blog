@@ -16,7 +16,7 @@ I love building products, be it for work or for a personal project. And when not
 
 I love art. Just enough to find myself dabble in it, mostly on illustrations. And when it comes to UI, I love rummaging around the nooks and crannies of the interface labyrinth to get the user experience just right. I often stick to the basics though. I am the *meat and potatoes* kind of guy.
 
-Since the front-end largely dictates the user experience of a product, I love driving it forward, keeping it performant and compliant. However, I am a **full-stack developer** and a **generalist** who loves engaging in all aspects related to systems, marketing and analytics.
+Since the front-end largely dictates the user experience of a product, I love driving it forward, keeping it performant and compliant. However, I am a full-stack developer with an eye for design and a generalist who loves engaging in all aspects related to systems, marketing and analytics.
 
 ### Other Interests:  
 
@@ -30,4 +30,4 @@ This blog will be mostly about products, user interfaces and the themes surround
 
 
 ## Hire me
-<span id="hiring">I am available for hire</span>. Please drop me an email at vigneshanand17@gmail.com or DM me on twitter/X.
+<span id="hiring" x-init="if(location.hash === '#hiring/') $el.scrollIntoView()">I am available for hire</span>. Please drop me an email at vigneshanand17@gmail.com or DM me on twitter/X.
