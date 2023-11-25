@@ -5,9 +5,11 @@
 <div class="image-gallery">
   {{ range $index, $image := $images }}
   {{ $resizedImage := $image.Process "resize 500x" }}
-    <picture>
-      <source srcset="{{ $image.Permalink }}" media="(min-width: 600px)"/>
-      <img src="{{ $resizedImage.Permalink }}" loading="lazy"/>
+    <picture x-data="{ shown: false }" x-intersect="shown = true">
+      <div x-show="shown" x-transition>
+        <source srcset="{{ $image.Permalink }}" media="(min-width: 600px)"/>
+        <img src="{{ $resizedImage.Permalink }}" loading="lazy"/>
+      </div>
     </picture>
   {{ end }}
 </div>
