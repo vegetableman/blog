@@ -26,6 +26,10 @@ picture img {
 
 .post__header__hero {
   background: linear-gradient(to top, #ffcbe5 0%, #b8d2f7 100%);
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;;
+  border-radius: .3125rem;
 }
 
 .post__header__hero svg {
