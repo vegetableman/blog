@@ -33,7 +33,7 @@ picture img {
 }
 
 .post__header__hero svg {
-  max-width: 80%;
+  max-width: 65%;
 }
 
 html[data-theme="dark"] .post__header__hero {
