@@ -195,7 +195,6 @@ time {
 
 .header__logo {
   flex-basis: 6.25rem;
-  letter-spacing: -1.3125rem;
   font-family: var(--font-title);
   font-size: 1.625rem;
   font-weight: 600;
@@ -449,7 +448,7 @@ a[href^="#"], a[name] {
 }
 
 .post__header__hero {
-  margin: 1.875rem 0 3.75rem 0;
+  margin: 1.625rem 0 3.75rem 0;
   text-align: center;
 }
 

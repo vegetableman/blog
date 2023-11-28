@@ -1,5 +1,5 @@
 <header class="header" x-data="{showMenu: false}" :class="showMenu ? 'header--mobile': ''">
-  <h1 class="header__logo"><a href="{{ .Site.BaseURL }}">VA</a></h1>
+  <h1 class="header__logo"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
   <nav x-transition x-show="showMenu" x-cloak>
       <ul>
           {{ range .Site.Menus.main.ByWeight -}}
