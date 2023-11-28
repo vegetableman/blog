@@ -38,7 +38,7 @@ So, when I needed to display short screencasts for my recent <a target="_blank" 
 Below is a demonstration of the tool generating one of the required demo's. 
 
 <figure align="center" style="aspect-ratio:1.79"> 
-  <video playsinline muted controls width="720">
+  <video playsinline muted controls width="720" poster="betamax.png">
     <source src="betamax.webm" type="video/webm"/>
   </video>
   <figcaption>Generating a demo</figcaption>
@@ -119,7 +119,7 @@ So now, without significantly altering the python encoder (possibly introduce <a
 So, what did I do?... Easy! I became Quicksilver and slowed down time.
 
 <figure align="center" x-data="{}" style="aspect-ratio:1.60">
-    <video class="lazy" playsinline muted width="100%" poster="betamax.png" controls x-on:ended="$el.autoplay = false; $el.load()">
+    <video class="lazy" playsinline muted width="100%" poster="bottle.png" controls x-on:ended="$el.autoplay = false; $el.load()">
       <source data-src="bottle.webm" type="video/webm"/>
     </video>
   <figcaption>Slowed down transitions <a href="#4">[4]</a></figcaption>
