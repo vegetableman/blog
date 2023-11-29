@@ -37,7 +37,7 @@ So, when I needed to display short screencasts for my recent <a target="_blank" 
 
 Below is a demonstration of the tool generating one of the required demo's. 
 
-<figure align="center" style="aspect-ratio:1.79"> 
+<figure align="center" style="aspect-ratio:1.61"> 
   <video class="lazy" playsinline muted controls width="720">
     <source data-src="betamax.webm" type="video/webm"/>
   </video>
