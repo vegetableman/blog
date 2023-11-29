@@ -1,7 +1,6 @@
 ---
 title: "Recording and generating animated screencasts within the browser"
 date: 2023-11-21T00:42:44+05:30
-hero: "/static/betamax/hero.svg"
 css: "css/betamax.css"
 ---
 
