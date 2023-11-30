@@ -462,7 +462,7 @@ a[href^="#"], a[name] {
 .post__content p, h3 {
   font-size: 1.1875rem;
   font-family: var(--font-text);
-  line-height: 1.6;
+  line-height: 1.5;
   text-wrap: pretty;
   word-wrap: break-word;
   color: var(--color-text);
