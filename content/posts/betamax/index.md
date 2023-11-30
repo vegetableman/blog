@@ -32,7 +32,7 @@ Reflecting on my quest for the past couple of months, I wonder if I should attri
 
 More than a decade ago, a blog post titled  <a href="https://www.sublimetext.com/~jps/animated_gifs_the_hard_way.html" target="blank">"Animated GIFs the Hard Way"</a>[[1]](#1) was released by Jon Skinner, the creator of Sublime Text. The post showcased a fascinating demo of the text editor (displayed above), brought to life through javascript, canvas and an image packing differences between the frames of a recording. However, I came across it only a couple of years back, after which it drifted in and out of my consciousness, as and when I used to extol it's ingenuity to some of my colleagues about it.
 
-So, when I needed to display short screencasts for my recent <a target="_blank" href="/proposal-for-a-navigation-panel-for-complex-or-perhaps-bloated-admin-interfaces/">blog post</a>, I decided to build a companion tool to record and generate those demo's.
+So, when I needed to display short screencasts for my recent <a target="_blank" href="/proposal-for-a-guided-panel-for-complex-or-perhaps-bloated-admin-interfaces/">blog post</a>, I decided to build a companion tool to record and generate those demo's.
 
 Below is a demonstration of the tool generating one of the required demo's. 
 
@@ -124,7 +124,7 @@ So, what did I do?... Easy! I became Quicksilver and slowed down time.
   <figcaption>Slowed down transitions <a href="#4">[4]</a></figcaption>
 </figure>
 
-So, if you are on a high DPI/Retina display, the demo *"Structure of the panel"* in <a target="_blank" href="/proposal-for-a-navigation-panel-for-complex-or-perhaps-bloated-admin-interfaces/">this blog post</a> was made possible after slowing down the UI before recording i.e., by increasing the delay of the transitioning elements in the UI (in one case, from `300ms` to `600ms`) and then by scaling down the delay property of all the differences in the timeline by a factor of `0.4`, thereby speeding up the animation. 
+So, if you are on a high DPI/Retina display, the demo *"Structure of the panel"* in <a target="_blank" href="/proposal-for-a-guided-panel-for-complex-or-perhaps-bloated-admin-interfaces/">this blog post</a> was made possible after slowing down the UI before recording i.e., by increasing the delay of the transitioning elements in the UI (in one case, from `300ms` to `600ms`) and then by scaling down the delay property of all the differences in the timeline by a factor of `0.4`, thereby speeding up the animation. 
 
 
 ## So, will Betamax ever replace &lt;video&gt;HS?
