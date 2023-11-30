@@ -1,5 +1,5 @@
 ---
-title: "Proposal for a navigation panel for complex (or perhaps bloated) admin interfaces"
+title: "Proposal for a guided panel for complex (or perhaps bloated) admin interfaces"
 date: 2023-11-20T20:42:44+05:30
 css: "css/interfaces.css"
 hero: "/static/interfaces/hero.svg"
@@ -48,7 +48,7 @@ Now, let's talk about a possible solution, keeping in mind the existing interfac
 
 📝 *The screencasts below are not videos but animated on canvas. Recorded and generated through a little tool I built called <a target="_blank" href="/recording-and-generating-animated-screencasts-within-the-browser">Betamax</a>. Check it out! ✨*
 
-Below are the characteristics of the navigation panel: 
+Below are the characteristics of the guided panel: 
 
 <div class="br"></div>
 
@@ -122,13 +122,13 @@ Are there other potential ways to humanize such applications besides video tutor
 
 So, is this approach suitable for all kinds of admin interfaces? No. It's heavily dependent on your target audience and whether the application has characteristics similar to ones on the last category above. 
 
-Is this navigation panel mobile-friendly? it could be. However, the desktop usage of these admin tools usually outnumber the mobile ones, so, I wouldn't consider it for mobile apps before testing out it's efficacy on the desktop. [[4]](#4)
+Is this panel mobile-friendly? it could be. However, the desktop usage of these admin tools usually outnumber the mobile ones, so, I wouldn't consider it for mobile apps before testing out it's efficacy on the desktop. [[4]](#4)
 
 Is this a fixer-upper kind of solution? yes. In an ideal world, applications should be able to incorporate the appropriate learning curve for it's end users. 
 
 And do I want to see this implemented in Shopify or other admin apps? No. I love thinking about products and user interfaces. So for me, this was just a fun thought experiment. Is this is a substitute for youtube tutorials? of course not. When done right (as Shopify does), nothing can substitute those friendly faces. 
 
-**To summarise**: A navigation panel &mdash; like the one showcased &mdash; will help users navigate the interface, just like a GPS would, without limiting agency ✌️.
+**To summarise**: A guided panel &mdash; like the one showcased &mdash; will help users navigate the interface, just like a GPS would, without limiting agency ✌️.
 
 <div class="br"></div>
 <div class="br"></div>
