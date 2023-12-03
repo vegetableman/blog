@@ -124,8 +124,9 @@ So, what did I do?... Easy! I became Quicksilver and slowed down time.
   <figcaption>Slowed down transitions <a href="#4">[4]</a></figcaption>
 </figure>
 
-So, if you are on a high DPI/Retina display, the demo *"Structure of the panel"* in <a target="_blank" href="/proposal-for-a-guided-panel-for-complex-or-perhaps-bloated-admin-interfaces/">this blog post</a> was made possible after slowing down the UI before recording i.e., by increasing the delay of the transitioning elements in the UI (in one case, from `300ms` to `600ms`) and then by scaling down the delay property of all the differences in the timeline by a factor of `0.4`, thereby speeding up the animation. 
+So, if you are on a high DPI/Retina display, the demo *"Structure of the panel"* in <a target="_blank" href="/proposal-for-a-guided-panel-for-complex-or-perhaps-bloated-admin-interfaces/">this blog post</a> was made possible after slowing down the UI before recording i.e., by increasing the delay of the transitioning elements in the UI (in one case, from `300ms` to `600ms`) and then by scaling down the delay property of all the differences in the timeline by a factor of `0.4`, thereby speeding up the animation.
 
+What are the other challenges? You could checkout the list of <a href="https://github.com/vegetableman/betamax/issues">issues</a> in the repo.
 
 ## So, will Betamax ever replace &lt;video&gt;HS?
 
@@ -135,7 +136,8 @@ To state the obvious, `<video>` is definitely better! it doesn't require javascr
 
 The primary goal of this project is to able to record and generate short animated screencasts within the browser *reliably* (and *quickly*) not because it wants to replace good ole `<video>` but because it's cool!
 
-Checkout the source code and open issues here: https://github.com/vegetableman/betamax
+Want to checkout the chrome extension? get it from the <a target="_blank" href="https://chromewebstore.google.com/detail/betamax-beta/bilkjgflfmchnijnkfnimmcolnkgbaol?hl=en&pli=1">web store</a>.
+Also, you can find the source code and open issues here: https://github.com/vegetableman/betamax.
 
 {{< lazy_loader >}}
 
