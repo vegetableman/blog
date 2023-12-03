@@ -21,6 +21,7 @@ picture img {
 }
 
 .quote {
+  font-family: var(--font-cursive);
   width: fit-content;
 }
 
@@ -28,7 +29,8 @@ picture img {
   background: linear-gradient(to top, #ffcbe5 0%, #b8d2f7 100%);
   max-width: 80%;
   margin-left: auto;
-  margin-right: auto;;
+  margin-right: auto;
+  ;
   border-radius: .3125rem;
 }
 
@@ -40,7 +42,7 @@ html[data-theme="dark"] .post__header__hero {
   background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
 }
 
-html[data-theme="dark"] .post__header__hero > svg path {
+html[data-theme="dark"] .post__header__hero>svg path {
   fill: darkslateblue;
 }
 
@@ -50,14 +52,14 @@ html[data-theme="dark"] .post__header__hero > svg path {
 }
 
 .zoomer {
-  position: relative; 
-  height: 31.25rem; 
-  overflow: hidden; 
+  position: relative;
+  height: 31.25rem;
+  overflow: hidden;
   background-color: #555;
 }
 
 .figcaption--small {
-  font-family: var(--font-text);
+  font-family: var(--font-cursive);
   font-size: .75rem;
 }
 

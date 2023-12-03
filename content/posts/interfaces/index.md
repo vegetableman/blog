@@ -16,7 +16,7 @@ Examples include ecommerce stores, booking websites, mail clients, chat applicat
 
 This category includes the tiniest of applications like a QR code scanner that does one thing, all the way up to design tools like Figma, Photoshop and productivity tools like Slack, Notion [[1]](#1).
 
-The comprehensive tools mentioned above could also be described as <strong>*journey tools*</strong> allowing the user to embark on a journey from a lowly begineer to an expert. Granted, you may face hurdles and seek documentation, tutorials, courses or guidance from your coworkers but it's all part of the journey as you play, make mistakes, undo those mistakes, learn and play all over again. rinse and repeat. circle of life. ♻️
+The comprehensive tools mentioned above could also be described as *journey tools* allowing the user to embark on a journey from a lowly begineer to an expert. Granted, you may face hurdles and seek documentation, tutorials, courses or guidance from your coworkers but it's all part of the journey as you play, make mistakes, undo those mistakes, learn and play all over again. rinse and repeat. circle of life. ♻️
 
 ### "I think I should check the manual first...":
 
@@ -46,7 +46,7 @@ The next section explores *one* of many possible solutions to the problems menti
 
 Now, let's talk about a possible solution, keeping in mind the existing interface and ecosystem cannot be revamped lest the business alienates its existing users. 
 
-📝 *The screencasts below are not videos but animated on canvas. Recorded and generated through a little tool I built called <a target="_blank" href="/recording-and-generating-animated-screencasts-within-the-browser">Betamax</a>. Check it out! ✨*
+📝 The screencasts below are not videos but animated on canvas. Recorded and generated through a little tool I built called <a target="_blank" href="/recording-and-generating-animated-screencasts-within-the-browser">Betamax</a>. Check it out! ✨
 
 Below are the characteristics of the guided panel: 
 
