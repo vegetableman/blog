@@ -24,7 +24,7 @@ I enjoy riding motorbikes — it's solitude in spectacular motion and working ou
 
 ### This blog:
 
-This blog will be mostly about products, user interfaces and the themes surrounding it. I am also looking forward to experimenting with LLM's and computer vision, I will be documenting my results here as well as on X. You could follow me on X: <a href=" https://X.com/vghanand" target="_blank">@vghanand</a>. (I will get more active on it, I promise!)
+This blog will be mostly about products, user interfaces, Javascript and the themes surrounding it. I am also looking forward to experimenting with Computer Graphics, LLM's and computer vision, I will be documenting my results here as well as on X. You could follow me on X: <a href=" https://X.com/vghanand" target="_blank">@vghanand</a>. (I will get more active on it, I promise!)
 
 
 ## Hire me
