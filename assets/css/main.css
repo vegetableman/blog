@@ -321,7 +321,7 @@ nav ul {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 i,
@@ -473,7 +473,7 @@ h3 {
   margin: 0;
   font-weight: 600;
   font-family: var(--font-cursive);
-  font-size: 1.0625rem;
+  font-size: 1.1875rem;
   font-style: italic;
   color: var(--color-subtitle);
   margin-bottom: calc(var(--ru) * 0.8rem);

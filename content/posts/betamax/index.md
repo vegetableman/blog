@@ -43,7 +43,7 @@ Below is a demonstration of the tool generating one of the required demo's.
   <figcaption>Generating a demo</figcaption>
 </figure>
 
-The tool is called <a>*Betamax*</a>. I know, comical as it may sound but it's been named that for a reason as it's not a replacement for `<video>` but merely an alternative medium that sort of died off along with the post Jon wrote eons ago. A relic of the past not seen elsewhere but the home pages of <a href="https://www.sublimetext.com/">amazing</a> <a target="_blank" href="https://www.sublimemerge.com/">products</a> from the mentioned author. It does sound cool though!
+The tool is called <a href="https://chromewebstore.google.com/detail/betamax-beta/bilkjgflfmchnijnkfnimmcolnkgbaol?hl=en&pli=1">Betamax</a>. I know, comical as it may sound but it's been named that for a reason as it's not a replacement for `<video>` but merely an alternative medium that sort of died off along with the post Jon wrote eons ago. A relic of the past not seen elsewhere but the home pages of <a href="https://www.sublimetext.com/">amazing</a> <a target="_blank" href="https://www.sublimemerge.com/">products</a> from the mentioned author. It does sound cool though!
 
 Below is the output generated from the tool (stored in zip): 
 
@@ -130,11 +130,11 @@ What are the other challenges? You could checkout the list of <a href="https://g
 
 ## So, will Betamax ever replace &lt;video&gt;HS?
 
-Of course! It's coming back with a vengence. World domination is in sight, once, this tool gets out of *BETA* and if Sony Corp doesn't sue me on trademark infringement :D
+Of course! It's coming back with a vengence. World domination is in sight, once, this tool gets out of BETA and if Sony Corp doesn't sue me on trademark infringement :D
 
 To state the obvious, `<video>` is definitely better! it doesn't require javascript to run, doesn't care for @2x assets, has fancy compression codecs and it's pretty much, "Record once, play anywhere!". 
 
-The primary goal of this project is to able to record and generate short animated screencasts within the browser *reliably* (and *quickly*) not because it wants to replace good ole `<video>` but because it's cool!
+The primary goal of this project is to able to record and generate short animated screencasts within the browser reliably (and quickly) not because it wants to replace good ole `<video>` but because it's cool!
 
 Want to checkout the chrome extension? get it from the <a target="_blank" href="https://chromewebstore.google.com/detail/betamax-beta/bilkjgflfmchnijnkfnimmcolnkgbaol?hl=en&pli=1">web store</a>.
 Also, you can find the source code and open issues here: https://github.com/vegetableman/betamax.
