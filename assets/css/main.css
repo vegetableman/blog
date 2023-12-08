@@ -459,8 +459,7 @@ a[name] {
   margin: 0 auto;
 }
 
-.post__content p,
-h3 {
+.post__content p {
   font-size: 1rem;
   font-family: var(--font-text);
   line-height: 1.6;
@@ -469,7 +468,8 @@ h3 {
   color: var(--color-text);
 }
 
-.post__content h3 {
+.post__content h3,
+h4 {
   margin: 0;
   font-weight: 600;
   font-family: var(--font-cursive);
@@ -477,6 +477,10 @@ h3 {
   font-style: italic;
   color: var(--color-subtitle);
   margin-bottom: calc(var(--ru) * 0.8rem);
+}
+
+.post__content h4 {
+  margin-bottom: calc(var(--ru) * 0.1rem);
 }
 
 .post__content h2 {
@@ -529,4 +533,8 @@ footer .st {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.margin-sm {
+  margin-top: .625rem;
 }

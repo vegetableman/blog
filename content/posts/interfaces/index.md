@@ -6,21 +6,21 @@ hero: "/static/interfaces/hero.svg"
 ---
 Based on usage complexity, software applications could be broadly classified in to three categories:
 
-### "I got this!":
+#### "I got this!":
 
-The applications that fall under this category are ubiquitous and, as such, their interfaces have become part of the *collective conscious*, so to speak. Most users can pretty much guess as to what will follow after a particular action.
+<p class="margin-sm">The applications that fall under this category are ubiquitous and, as such, their interfaces have become part of the *collective conscious*, so to speak. Most users can pretty much guess as to what will follow after a particular action.
 
-Examples include ecommerce stores, booking websites, mail clients, chat applications, basic text editors. It's not uncommon to find competing applications in this category have similar actions in the exact location as the other one.
+Examples include ecommerce stores, booking websites, mail clients, chat applications, basic text editors. It's not uncommon to find competing applications in this category have similar actions in the exact location as the other one.</p>
 
-### "I can always play and figure it out.":
+#### "I can always play and figure it out.":
 
-This category includes the tiniest of applications like a QR code scanner that does one thing, all the way up to design tools like Figma, Photoshop and productivity tools like Slack, Notion [[1]](#1).
+<p class="margin-sm">This category includes the tiniest of applications like a QR code scanner that does one thing, all the way up to design tools like Figma, Photoshop and productivity tools like Slack, Notion [[1]](#1).
 
-The comprehensive tools mentioned above could also be described as *journey tools* allowing the user to embark on a journey from a lowly begineer to an expert. Granted, you may face hurdles and seek documentation, tutorials, courses or guidance from your coworkers but it's all part of the journey as you play, make mistakes, undo those mistakes, learn and play all over again. rinse and repeat. circle of life. ♻️
+The comprehensive tools mentioned above could also be described as *journey tools* allowing the user to embark on a journey from a lowly begineer to an expert. Granted, you may face hurdles and seek documentation, tutorials, courses or guidance from your coworkers but it's all part of the journey as you play, make mistakes, undo those mistakes, learn and play all over again. rinse and repeat. circle of life. ♻️</p>
 
-### "I think I should check the manual first...":
+#### "I think I should check the manual first...":
 
-The applications on this category typically include dashboard/admin applications that integrate a multitude of features, each application on their own right, into one. Their interfaces are oriented towards business verticals or information management of some sort &mdash; aka *something critical*.
+<p class="margin-sm">TThe applications on this category typically include dashboard/admin applications that integrate a multitude of features, each application on their own right, into one. Their interfaces are oriented towards business verticals or information management of some sort &mdash; aka *something critical*.</p>
 
 Relatable examples include Shopify, Income Tax portal [[2]](#2), etc. Besides those, any application targeting a business vertical (banking, healthcare, etc.), primarily used by employees of those businesses, will also end up in this category.
 

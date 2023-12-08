@@ -6,45 +6,38 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-  description = "Blog"
-  copyright = "© 2023 Vignesh Anand"
-  highlight = true
+description = "Blog"
+copyright = "© 2023 Vignesh Anand"
+highlight = true
 
 [menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    url = "/"
-    weight = 10
+[[menu.main]]
+identifier = "posts"
+name = "posts"
+title = "posts"
+url = "/"
+weight = 10
 
-  [[menu.main]]
-    identifier = "about"
-    name = "about"
-    title = "about"
-    url = "/about/"
-    weight = 20
-
-  [[menu.main]]
-    identifier = "hire_me"
-    name = "hire me"
-    title = "hire me"
-    url = "/about#hiring/"
-    weight = 30
+[[menu.main]]
+identifier = "about"
+name = "about"
+title = "about"
+url = "/about/"
+weight = 20
 
 [permalinks]
-  posts = "/:title/"
+posts = "/:title/"
 
 [markup.goldmark.renderer]
-  # Allows HTML in Markdown
-  unsafe = true
+# Allows HTML in Markdown
+unsafe = true
 
 [imaging]
-  anchor = 'Smart'
-  bgColor = '#ffffff'
-  hint = 'photo'
-  quality = 75
-  resampleFilter = 'Box'
+anchor = 'Smart'
+bgColor = '#ffffff'
+hint = 'photo'
+quality = 75
+resampleFilter = 'Box'
 
 [minify]
-  disableCSS = false
+disableCSS = false

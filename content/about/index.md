@@ -18,14 +18,14 @@ I love art. Just enough to find myself dabble in it, mostly on illustrations. An
 
 Since the front-end largely dictates the user experience of a product, I love driving it forward, keeping it performant and compliant. However, I am a full-stack developer with an eye for design and a generalist who loves engaging in all aspects related to systems, marketing and analytics.
 
-### Other Interests:  
+#### Other Interests:  
 
-I enjoy riding motorbikes — it's solitude in spectacular motion and working out. Between podcasts and blogs, I have finally managed to snuck in some books — currently reading "Fear and loathing at Rolling stone" by Hunter Thompson.
+<p class="margin-sm">I enjoy riding motorbikes — it's solitude in spectacular motion and working out. Between podcasts and blogs, I have finally managed to snuck in some books — currently reading "Fear and loathing at Rolling stone" by Hunter Thompson.</p>
 
-### This blog:
+#### This blog:
 
-This blog will be mostly about products, user interfaces, javascript and the themes surrounding it. I am also looking forward to experimenting with computer graphics, LLM's and computer vision, I will be documenting my results here as well as on X. You could follow me on X: <a href=" https://X.com/vghanand" target="_blank">@vghanand</a>. (I will get more active on it, I promise!)
+<p class="margin-sm">This blog will be mostly about products, user interfaces, javascript and the themes surrounding it. I am also looking forward to experimenting with computer graphics, LLM's and computer vision, I will be documenting my results here as well as on X. You could follow me on X: <a href=" https://X.com/vghanand" target="_blank">@vghanand</a>. (I will get more active on it, I promise!)</p>
 
 
-## Hire me
-<span id="hiring" x-init="if(location.hash === '#hiring/') $el.scrollIntoView()">I am available for hire</span>. Please drop me an email at vigneshanand17@gmail.com or DM me on twitter/X.
+#### Work with me:
+<p  class="margin-sm">Please drop me an email at vigneshanand17@gmail.com or DM me on twitter/X.</p>
