@@ -10,13 +10,11 @@ title = "About me"
   <div class="tint"></div>
 </div>
 
-It's a bit uncomfortable to talk about oneself (Surely, am not the only one) — as I stare in to the void — however, this is a professional (semi-personal, maybe?) blog and I am a professional (I'd like to think so).
-
-I love building products, be it for work or for a personal project. And when not building them, I find myself not too far from thinking about them. It's quite similar to world building in that it exercises all the faculties that one has to conjure up an imaginary world for all of us to inhabit and interact. 
+I love building products, be it for work or for a personal project. And when not building them, I find myself not too far from thinking about them. It's quite similar to world building in that it exercises all the faculties that one has to conjure up an imaginary world for all of us to inhabit and interact.
 
 I love art. Just enough to find myself dabble in it, mostly on illustrations. And when it comes to UI, I love rummaging around the nooks and crannies of the interface labyrinth to get the user experience just right. I often stick to the basics though. I am the *meat and potatoes* kind of guy.
 
-Since the front-end largely dictates the user experience of a product, I love driving it forward, keeping it performant and compliant. However, I am a full-stack developer with an eye for design and a generalist who loves engaging in all aspects related to systems, marketing and analytics.
+I love writing code. Since the front-end largely dictates the user experience of a product, I love driving it forward, keeping it performant and compliant. However, I am a full-stack developer with an eye for design and a generalist who loves engaging in all aspects related to backend, marketing and analytics.
 
 #### Other Interests:  
 
