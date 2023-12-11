@@ -24,7 +24,7 @@ Since the front-end largely dictates the user experience of a product, I love dr
 
 #### This blog:
 
-<p class="margin-sm">This blog will be mostly about products, user interfaces, javascript and the themes surrounding it. I am also looking forward to experimenting with computer graphics, LLM's and computer vision, I will be documenting my results here as well as on X. You could follow me on X: <a href=" https://X.com/vghanand" target="_blank">@vghanand</a>. (I will get more active on it, I promise!)</p>
+<p class="margin-sm">This blog will be mostly about code, user interfaces, javascript and the themes surrounding it. I will be documenting my results here as well as on X. You could follow me on X: <a href=" https://X.com/vghanand" target="_blank">@vghanand</a>. (I will get more active on it, I promise!)</p>
 
 
 #### Contact me:
