@@ -34,7 +34,7 @@ More than a decade ago, a blog post titled  <a href="https://www.sublimetext.com
 
 So, when I needed to display short screencasts for my recent <a target="_blank" href="/proposal-for-a-guided-panel-for-complex-or-perhaps-bloated-admin-interfaces/">blog post</a>, I decided to build a companion tool to record and generate those demo's.
 
-Below is a demonstration of the tool generating one of the required demo's. 
+Below is a demonstration of the tool generating a demo. 
 
 <figure align="center" style="aspect-ratio:1.61"> 
   <video class="lazy" playsinline muted controls width="720" style="aspect-ratio:1.77">
