@@ -38,7 +38,7 @@
   --color-link-hover: var(--blue-40);
   --color-title: var(--blue-56);
   --color-subtitle: var(--black-24);
-  --color-icon: var(--black-47);
+  --color-icon: var(--black-24);
   --color-icon-hover: var(--black-20);
   --color-code: var(--blue);
 }
@@ -93,14 +93,6 @@ body {
 
 main {
   flex: 1;
-}
-
-a[href] {
-  color: var(--color-link);
-}
-
-a[href]:hover {
-  color: var(--color-link-hover);
 }
 
 figure {
@@ -212,6 +204,7 @@ time {
 }
 
 .header__logo a {
+  color: var(--color-text);
   text-decoration: none;
 }
 
@@ -264,6 +257,7 @@ html[data-theme="dark"] .header__th-icon--dark {
   font-size: 1.625rem;
   font-weight: 600;
   padding: 0 1rem;
+  color: var(--color-text);
 }
 
 .header__link:hover {
@@ -377,6 +371,7 @@ a[name] {
   font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
+  color: var(--color-title);
 }
 
 @media screen and (min-width: 1024px) {
