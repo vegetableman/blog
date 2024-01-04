@@ -350,7 +350,7 @@ a[name] {
 .listing>h1 {
   font-size: 1.5rem;
   font-family: var(--font-title);
-  font-weight: 600;
+  font-weight: 500;
   color: var(--black-47);
 }
 
