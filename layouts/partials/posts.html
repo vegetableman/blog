@@ -1,4 +1,3 @@
-<h1>{{ i18n "posts.title" }}</h1>
 <ul id="posts" class="listing__posts">
   {{- range where site.RegularPages "Type" "in" site.Params.mainSections }}
       {{ .Render "li" }}

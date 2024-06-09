@@ -6,7 +6,7 @@
   --white-93: hsl(0, 0%, 93%);
   --white-87: hsl(0, 0%, 87%);
   --white-80: hwb(0 80% 20%);
-  --white-83: hsl(0, 0%, 83%);
+  --white-67: hsl(0, 0%, 67%);
   --black: hsl(0, 0%, 0%);
   --black-24: hsl(0, 0%, 24%);
   --black-20: hsl(0, 0%, 20%);
@@ -22,13 +22,14 @@
   --dark-orange: darkorange;
   --base: 16;
   --ru: 1.5;
-  --font-title: "Josefin Slab", Georgia, Times, serif;
+  --font-title: "Manrope", "Josefin Slab", Georgia, Times, serif;
   --font-secondary: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
     Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-text: system-ui, -apple-system, Segoe UI, Roboto,
     Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-mono: monospace;
   --font-cursive: "Spectral", var(--font-text);
   --page-margin: calc(54 / var(--base) * 1rem);
   --page-margin-mid: calc(28 / var(--base) * 1rem);
@@ -44,6 +45,7 @@
   --color-subtitle: var(--black-24);
   --color-icon: var(--black-24);
   --color-icon-hover: var(--black-20);
+  --color-time: var(--black-47);
   --color-code: var(--blue);
 }
 
@@ -64,6 +66,7 @@
   --color-subtitle: var(--white);
   --color-icon: var(--black-87);
   --color-icon-hover: var(--white);
+  --color-time: var(--white-67);
   --color-code: var(--dark-orange);
   --post-border: transparent;
 }
@@ -72,6 +75,18 @@
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: underline;
+}
+
+html[data-theme="dark"] a {
+  color: var(--color-link);
+}
+
+html[data-theme="dark"] a:hover {
+  color: var(--color-link-hover);
 }
 
 html {
@@ -92,7 +107,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   :root:not([data-theme="dark"]) body {
-    --bg-color: var(--gray-93)
+    --bg-color: var(--white)
   }
 }
 
@@ -141,8 +156,8 @@ p {
 }
 
 time {
-  font-size: 1rem;
-  color: var(--color-text-fade);
+  color: var(--color-time);
+  font-family: var(--font-mono);
 }
 
 [x-cloak] {
@@ -163,10 +178,9 @@ time {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 75rem;
+  max-width: 50rem;
   margin: 0 auto;
-  padding: 2rem 0;
-  background-color: var(--bg-color);
+  padding: 2rem 0 0 0;
   z-index: 1;
 }
 
@@ -178,8 +192,9 @@ time {
 .header__logo {
   flex-basis: 6.25rem;
   font-family: var(--font-title);
-  font-size: 1.625rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--color-title);
+  font-weight: normal;
   text-decoration: none;
   z-index: 1;
 }
@@ -203,7 +218,7 @@ time {
 }
 
 .header__logo a {
-  color: var(--color-text);
+  color: var(--color-title);
   text-decoration: none;
 }
 
@@ -253,19 +268,12 @@ html[data-theme="dark"] .header__th-icon--dark {
 
 .header__link {
   font-family: var(--font-title);
-  font-size: 1.625rem;
-  font-weight: 600;
-  padding: 0 1rem;
+  font-size: 1.25rem;
   color: var(--color-text);
 }
 
 .header__link:hover {
   color: var(--color-link-hover);
-  background: var(--yellow);
-}
-
-[data-theme="dark"] .header__link:hover {
-  color: var(--black-20);
 }
 
 @supports (-moz-osx-font-smoothing: auto) {
@@ -285,7 +293,6 @@ nav {
   gap: 2rem;
   width: 100%;
   height: 100%;
-  background: var(--bg-color);
 }
 
 @media screen and (min-width: 786px) {
@@ -343,7 +350,7 @@ a[name] {
 
 .listing {
   max-width: 50rem;
-  margin: 0 auto;
+  margin: 2.5rem auto;
 }
 
 .listing>h1 {
@@ -362,20 +369,20 @@ a[name] {
 .listing__post {
   display: flex;
   flex-direction: column;
-  margin-bottom: calc(var(--ru) * 2.2rem);
+  align-items: flex-start;
+  margin-bottom: calc(var(--ru) * 1rem);
 }
 
 .listing__post__link {
   font-family: var(--font-title);
   font-size: 1.5rem;
-  font-weight: 600;
   text-decoration: none;
   color: var(--color-title);
 }
 
 @media screen and (min-width: 1024px) {
   .listing__post__link {
-    font-size: 1.6875rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -386,15 +393,13 @@ a[name] {
 }
 
 .listing__post__time {
-  font-size: 0.875rem;
-  font-family: var(--font-secondary);
-  color: var(--color-text-fade);
+  font-size: .625rem;
   padding-top: calc(var(--ru) * 0.3rem);
 }
 
 @media screen and (min-width: 1024px) {
   .listing__post__time {
-    font-size: 1.125rem;
+    font-size: .875rem;
   }
 }
 
@@ -411,7 +416,7 @@ a[name] {
 
 @media screen and (min-width: 768px) {
   .post__title {
-    font-size: 3rem;
+    font-size: 2.25rem;
     padding: 0 3.75rem;
   }
 }
@@ -423,18 +428,11 @@ a[name] {
 }
 
 .post {
-  background: var(--post-bg-color);
   border-radius: .625rem;
   max-width: 56.25rem;
   margin: 0 auto;
 }
 
-
-@media screen and (min-width: 1024px) {
-  .post {
-    border: 1px solid var(--post-border);
-  }
-}
 
 .post__header {
   margin-bottom: 2.5rem;
@@ -446,6 +444,9 @@ a[name] {
 }
 
 .post__time {
+  font-family: var(--font-mono);
+  font-size: .875rem;
+  color: var(--color-time);
   text-align: center;
 }
 
@@ -481,8 +482,8 @@ h4 {
 .post__content h2 {
   --l-base: 48;
   font-family: var(--font-title);
-  font-weight: 500;
-  font-size: 2.375rem;
+  font-weight: normal;
+  font-size: 2rem;
   color: var(--color-title);
 }
 
@@ -514,10 +515,6 @@ h4 {
 
 footer {
   margin: 1.25rem 0;
-}
-
-footer .st {
-  stroke: var(--white-83);
 }
 
 [data-theme="dark"] footer .st {

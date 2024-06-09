@@ -1,7 +1,3 @@
-+++
-title = "About me"
-+++
-
 <div class="about__pic__container">
   <picture>
     <source srcset="images/large_me_vqoaor_c_scale,w_978.png" media="(min-width: 768px)">
@@ -22,7 +18,7 @@ I love art. Just enough to find myself dabble in it, mostly on illustrations. An
 
 #### This blog:
 
-<p class="margin-sm">This blog will be mostly about code, user interfaces, javascript and the themes surrounding it. I will be documenting my results here as well as on X. You could follow me on X: <a href=" https://X.com/vghanand" target="_blank">@vghanand</a>. (I will get more active on it, I promise!)</p>
+<p class="margin-sm">This blog will be mostly about programming, user interfaces and the themes surrounding it. I will be documenting my results here as well as on X. You could follow me on X: <a href=" https://X.com/vghanand" target="_blank">@vghanand</a>. (I will get more active on it, I promise!)</p>
 
 
 #### Contact me:
