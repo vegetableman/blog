@@ -1,3 +1,6 @@
++++
++++
+
 <div class="about__pic__container">
   <picture>
     <source srcset="images/large_me_vqoaor_c_scale,w_978.png" media="(min-width: 768px)">
