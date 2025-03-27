@@ -2,6 +2,8 @@
 title: "Recording and generating animated screencasts within the browser"
 date: 2023-11-21T00:42:44+05:30
 css: "css/betamax.css"
+type: "blog"
+layout: "betamax"
 ---
 
 <div class="br"></div>
@@ -11,9 +13,6 @@ css: "css/betamax.css"
   <br/>
   <span class="ptg">- <small>Don Draper</small></span>
 </p>
-
-<div class="br"></div>
-<div class="br"></div>
 
 {{< btm_animate >}}
 
@@ -30,7 +29,8 @@ Reflecting on my quest for the past couple of months, I wonder if I should attri
 <div class="br"></div>
 
 
-More than a decade ago, a blog post titled  <a href="https://www.sublimetext.com/~jps/animated_gifs_the_hard_way.html" target="blank">"Animated GIFs the Hard Way"</a>[[1]](#1) was released by Jon Skinner, the creator of Sublime Text. The post showcased a fascinating demo of the text editor (displayed above), brought to life through javascript, canvas and an image packing differences between the frames of a recording. However, I came across it only a couple of years back, after which it drifted in and out of my consciousness, as and when I used to extol it's ingenuity to some of my colleagues about it.
+More than a decade ago, a blog post titled  <a href="https://www.sublimetext.com/~jps/animated_gifs_the_hard_way.html" target="blank">"Animated GIFs the Hard Way"</a>
+<span class="citation">[[1]](#1)</span> was released by Jon Skinner, the creator of Sublime Text. The post showcased a fascinating demo of the text editor (displayed above), brought to life through javascript, canvas and an image packing differences between the frames of a recording. However, I came across it only a couple of years back, after which it drifted in and out of my consciousness, as and when I used to extol it's ingenuity to some of my colleagues about it.
 
 So, when I needed to display short screencasts for my recent <a target="_blank" href="/proposal-for-a-guided-panel-for-complex-or-perhaps-bloated-admin-interfaces/">blog post</a>, I decided to build a companion tool to record and generate those demo's.
 
@@ -97,12 +97,12 @@ Now, let's talk about two ways we can record snapshots of the screen or applicat
 
 `ImageCapture`: This is the default implementation. It relies on the <a href="https://developer.mozilla.org/en-US/docs/Web/API/ImageCapture/grabFrame" target="_blank">`grabFrame`</a> method of this interface which runs on an interval set to selected frame rate during recording. This method is a costly operation to run in case of high DPI displays, as it takes a snapshot of the whole region and doesn't allow cropping. However, to alleviate memory issues, only the required cropped region from those frames are stored using <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/createImageBitmap">`createImageBitmap`</a> on each interval before passing it off to the encoder post-recording.
 
-`MediaRecorder`: This is the second option. When selected, it uses the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API">MediaStream Recording API</a>. Most of the screen recording extensions out on the wild use this api. It natively buffers and encodes the captured data with a lossy video codec [[2]](@2). The resulting blob out of this data is then set as source of a video element which can be played or downloaded.  Although it does affect the frame rate of the web page during recording, but relatively less so, allowing for transitions to be captured. Now, with regards to Betamax, we want individual frames out of this video, not the video itself. So, I initiate a playback of this video and capture frames out of it at a set interval.
-However, the resulting frames are not only larger in size (<a target="_blank" href="https://github.com/vegetableman/betamax/issues/3">better color reproduction</a> than `ImageCapture`) but also have identical frames that <a href="https://github.com/vegetableman/betamax/issues/2">differ greatly</a> in **pixel data** due to compression (applied through encoding) during recording. 
+`MediaRecorder`: This is the second option. When selected, it uses the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API">MediaStream Recording API</a>. Most of the screen recording extensions out on the wild use this api. It natively buffers and encodes the captured data with a lossy video codec <span class="citation">[[2]](#2)</span>. The resulting blob out of this data is then set as source of a video element which can be played or downloaded.  Although it does affect the frame rate of the web page during recording, but relatively less so, allowing for transitions to be captured. Now, with regards to Betamax, we want individual frames out of this video, not the video itself. So, I initiate a playback of this video and capture frames out of it at a set interval.
+However, the resulting frames are not only larger in size (<a target="_blank" href="https://github.com/vegetableman/betamax/issues/3">better color reproduction</a> than `ImageCapture`) but also have identical frames that <a href="https://github.com/vegetableman/betamax/issues/2">differ greatly</a> in "pixel data" due to compression (applied through encoding) during recording. 
 
-What is the mentioned **pixel data**? 
+What is the mentioned "pixel data"? 
 
-It simply refers to the individual color values that make up the visual content of an image. The data consists of information about the color and intensity of each pixel, typically expressed in terms of red, green, and blue (RGB) values. [[3]](#3) 
+It simply refers to the individual color values that make up the visual content of an image. The data consists of information about the color and intensity of each pixel, typically expressed in terms of red, green, and blue (RGB) values. <span class="citation">[[3]](#3)</span> 
 
 This data is important because the current implementation of the python encoder relies on the differences between pixel data of individual frames to generate the packed image. However, due to compression applied by video codecs during the recording, even visually identical frames will differ in this data and end up being marked as dissimilar and packed separately &mdash; increasing the size of the packed image and, failing at it pretty much. 
 
@@ -121,10 +121,10 @@ So, what did I do?... Easy! I became Quicksilver and slowed down time.
     <video class="lazy" playsinline muted width="100%" poster="bottle.png" controls x-on:ended="$el.autoplay = false; $el.load()">
       <source data-src="bottle.webm" type="video/webm"/>
     </video>
-  <figcaption>Slowed down transitions <a href="#4">[4]</a></figcaption>
+  <figcaption>Slowed down transitions <span class="citation"><a href="#4">[4]</a></span></figcaption>
 </figure>
 
-So, if you are on a high DPI/Retina display, the demo *"Structure of the panel"* in <a target="_blank" href="/proposal-for-a-guided-panel-for-complex-or-perhaps-bloated-admin-interfaces/">this blog post</a> was made possible after slowing down the UI before recording i.e., by increasing the delay of the transitioning elements in the UI (in one case, from `300ms` to `600ms`) and then by scaling down the delay property of all the differences in the timeline by a factor of `0.4`, thereby speeding up the animation.
+So, if you are on a high DPI/Retina display, the demo "Structure of the panel" in <a target="_blank" href="/proposal-for-a-guided-panel-for-complex-or-perhaps-bloated-admin-interfaces/">this blog post</a> was made possible after slowing down the UI before recording i.e., by increasing the delay of the transitioning elements in the UI (in one case, from `300ms` to `600ms`) and then by scaling down the delay property of all the differences in the timeline by a factor of `0.4`, thereby speeding up the animation.
 
 What are the other challenges? You could checkout the list of <a href="https://github.com/vegetableman/betamax/issues">issues</a> in the repo.
 

@@ -1,12 +1,12 @@
 {{ $page := .Page }}
 
 <li class="listing__post">
-  {{ with .Params.external_link }}
-     <a class="listing__post__link" href="{{ . }}" target="_blank">{{ $page.Title }}</a>
-  {{ else }}
-    <a class="listing__post__link" href="{{ .Permalink }}">
-      {{ .Title }}
-    </a>
-  {{ end }}
   <time class="listing__post__time">{{ .Date | time.Format (i18n "posts.date") }}</time>
+  {{ with .Params.external_link }}
+  <a class="listing__post__link" href="{{ . }}" target="_blank">{{ $page.Title }}</a>
+  {{ else }}
+  <a class="listing__post__link" href="{{ .Permalink }}">
+    {{ .Title }}
+  </a>
+  {{ end }}
 </li>

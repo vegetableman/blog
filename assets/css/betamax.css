@@ -23,6 +23,7 @@ picture img {
 .quote {
   font-family: var(--font-cursive);
   width: fit-content;
+  margin-bottom: 3.75rem;
 }
 
 .post__header__hero {
@@ -89,7 +90,12 @@ html[data-theme="dark"] .post__header__hero>svg path {
 }
 
 .timeline {
+  background-color: #444;
   width: 100%;
   margin: 0;
   overflow: auto;
+}
+
+h2 {
+  color: var(--accent-color);
 }

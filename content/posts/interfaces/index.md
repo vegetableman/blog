@@ -2,7 +2,8 @@
 title: "Proposal for a guided panel for complex (or perhaps bloated) admin interfaces"
 date: 2023-11-20T20:42:44+05:30
 css: "css/interfaces.css"
-hero: "/static/interfaces/hero.svg"
+type: "blog"
+layout: "interfaces"
 ---
 Based on usage complexity, software applications could be broadly classified in to three categories:
 
@@ -18,7 +19,7 @@ Examples include ecommerce stores, booking websites, mail clients, chat applicat
 
 <p class="margin-sm"></p>
 
-This category includes the tiniest of applications like a QR code scanner that does one thing, all the way up to design tools like Figma, Photoshop and productivity tools like Slack, Notion [[1]](#1).
+This category includes the tiniest of applications like a QR code scanner that does one thing, all the way up to design tools like Figma, Photoshop and productivity tools like Slack, Notion <span class="citation">[[1]](#1)</span>.
 
 The comprehensive tools mentioned above could also be described as *journey tools* allowing the user to embark on a journey from a lowly begineer to an expert. Granted, you may face hurdles and seek documentation, tutorials, courses or guidance from your coworkers but it's all part of the journey as you play, make mistakes, undo those mistakes, learn and play all over again. rinse and repeat. circle of life. ♻️
 
@@ -28,7 +29,7 @@ The comprehensive tools mentioned above could also be described as *journey tool
 
 The applications on this category typically include dashboard/admin applications that integrate a multitude of features, each application on their own right, into one. Their interfaces are oriented towards business verticals or information management of some sort &mdash; aka *something critical*.
 
-Relatable examples include Shopify, Income Tax portal [[2]](#2), etc. Besides those, any application targeting a business vertical (banking, healthcare, etc.), primarily used by employees of those businesses, will also end up in this category.
+Relatable examples include Shopify, Income Tax portal <span class="citation">[[2]](#2)</span>, etc. Besides those, any application targeting a business vertical (banking, healthcare, etc.), primarily used by employees of those businesses, will also end up in this category.
 
 Firstly, what sets them apart from the above two categories is that they have documentation, tutorials, courses not only for guiding users but also as a prerequisite. In the absence of such prerequisite, a certain know-how is expected from the end user.
 
@@ -42,7 +43,7 @@ Firstly, what sets them apart from the above two categories is that they have do
 
 For instance, the video tutorials like the one above from the official Shopify channel are immensely popular and have an incredible side effect of humanizing the brand to it's wide audience  &mdash; not to forget, youtube has become a tutorial wonderland for everything under the sun &mdash; however, if a product has tutorial for it's users on getting started *the right way*, you know it can get quite overwhelming for beginner users.
 
-Secondly, it bears mentioning that applications in this category cannot be used or described as *journey tools* [[3]](#3). Not only for the reasons listed above but also because the journey could abruptly land its target audience on too unknown of a terrain. For instance, in case of Shopify, you will inevitably find yourself in need of customization. There are levels to customization and guidance, however, if a regular store owner has to learn web technology jargon and expected to know that missing an `alt` text might impact their *SEO* or understand HTML/CSS for a minute change like changing the background color of a button as seen <a href="https://community.shopify.com/c/shopify-discussions/button-change-color-when-product-is-soldout/td-p/2013766" target="blank">in this question</a>, it can quickly become cumbersome.
+Secondly, it bears mentioning that applications in this category cannot be used or described as *journey tools* <span class="citation">[[3]](#3)</span>. Not only for the reasons listed above but also because the journey could abruptly land its target audience on too unknown of a terrain. For instance, in case of Shopify, you will inevitably find yourself in need of customization. There are levels to customization and guidance, however, if a regular store owner has to learn web technology jargon and expected to know that missing an `alt` text might impact their *SEO* or understand HTML/CSS for a minute change like changing the background color of a button as seen <a href="https://community.shopify.com/c/shopify-discussions/button-change-color-when-product-is-soldout/td-p/2013766" target="blank">in this question</a>, it can quickly become cumbersome.
 
 The next section explores *one* of many possible solutions to the problems mentioned.
 
@@ -110,7 +111,7 @@ Out in the real world, when you are travelling and get lost somewhere, it's reas
 
 <div class="br"></div>
 
-With AI chatbots at large, it has never been easier to create a humanized guide. It could also assist users on trivial tasks that may appear non-trivial — like the one posted on the forum link above [[4]](#4). An example of an assistant from Shopify can be seen <a target="_blank" href="https://www.shopify.com/in/magic">here</a>.
+With AI chatbots at large, it has never been easier to create a humanized guide. It could also assist users on trivial tasks that may appear non-trivial — like the one posted on the forum link above. An example of an assistant from Shopify can be seen <a target="_blank" href="https://www.shopify.com/in/magic">here</a>.
  
 Now, should an AI assistant automate away all the UI actions for the user? It will, if it can. I do see it being particularily useful in scenarios where the user would rather type through a problem than deal with some complex UI soup.
 So, will the user interface ultimately end up being a presentation layer with all the WRITE actions typed by the user instead of clicking through buttons? I don't think so. In order to use any AI chatbot effectively, the user has to be able to first frame the question appropriately, inevitably requiring them to have some experience with the product interface. In other words, the user interface will always remain central to the product usage.
@@ -128,7 +129,7 @@ Are there other potential ways to humanize such applications besides video tutor
 
 So, is this approach suitable for all kinds of admin interfaces? No. It's heavily dependent on your target audience and whether the application has characteristics similar to ones on the last category above. 
 
-Is this panel mobile-friendly? it could be. However, the desktop usage of these admin tools usually outnumber the mobile ones, so, I wouldn't consider it for mobile apps before testing out it's efficacy on the desktop. [[4]](#4)
+Is this panel mobile-friendly? it could be. However, the desktop usage of these admin tools usually outnumber the mobile ones, so, I wouldn't consider it for mobile apps before testing out it's efficacy on the desktop. <span class="citation">[[4]](#4)</span>
 
 Is this a fixer-upper kind of solution? yes. In an ideal world, applications should be able to incorporate the appropriate learning curve for it's end users. 
 

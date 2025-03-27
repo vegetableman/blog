@@ -13,17 +13,25 @@ highlight = true
 [menu]
 [[menu.main]]
 identifier = "posts"
-name = "posts"
+name = "Posts"
 title = "posts"
 url = "/"
 weight = 10
 
 [[menu.main]]
 identifier = "about"
-name = "about"
+name = "About"
 title = "about"
 url = "/about/"
 weight = 20
+
+[[menu.main]]
+identifier = "github"
+name = "Github"
+title = "github"
+url = "https://github.com/vegetableman"
+weight = 30
+
 
 [permalinks]
 posts = "/:title/"

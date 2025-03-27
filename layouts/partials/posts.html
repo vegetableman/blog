@@ -1,5 +1,5 @@
 <ul id="posts" class="listing__posts">
-  {{- range where site.RegularPages "Type" "in" site.Params.mainSections }}
-      {{ .Render "li" }}
+  {{ range (where .Site.RegularPages "Type" "in" (slice "posts" "blog")) }}
+  {{ .Render "li" }}
   {{- end }}
 </ul>
