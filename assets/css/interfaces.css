@@ -73,11 +73,13 @@
 .btm-canvas--panel {
   position: relative;
   top: -1.25rem;
+  padding-bottom: .625rem;
 }
 
 @media screen and (min-width: 464px) {
   .btm-canvas {
     width: auto;
+    padding-bottom: 0;
   }
 }
 
