@@ -81,6 +81,10 @@
   }
 }
 
+.overlay-list {
+  padding: 0;
+}
+
 .overlay-item {
   position: absolute;
   padding: 0 0.3125rem;

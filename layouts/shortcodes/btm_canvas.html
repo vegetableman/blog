@@ -16,7 +16,7 @@
     <canvas x-ref="canvas" class="btm-canvas" :class="cIndex > 0 ? 'btm-canvas--panel': ''" width="{{ $width }}"
       x-bind:height="(window.devicePixelRatio < 1.3 && ldHeight ? ldHeight: height)"></canvas>
     <template x-if="showOverlay">
-      <ul :class="'overlay-list--'+ cIndex"
+      <ul class="overlay-list" :class="'overlay-list--'+ cIndex"
         x-data="{ list: $store.timeline.series[cIndex].children ? $store.timeline.series[cIndex].children[selectedIndex].overlays: $store.timeline.series[cIndex].overlays }">
         <template x-for="(item, i) in list">
           <li class="overlay-item" x-show="activeOverlay.includes(i)" :class="'overlay-item--'+ cIndex + '-' + i"
