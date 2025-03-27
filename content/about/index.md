@@ -1,5 +1,6 @@
-+++
-+++
+---
+layout: "about"
+---
 
 <div class="about__pic__container">
   <picture>
