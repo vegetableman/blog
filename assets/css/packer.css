@@ -1,5 +1,9 @@
-pre {
-  white-space: break-spaces;
+.highlight {
+  overflow-x: hidden;
+}
+
+.chroma {
+  overflow-x: auto;
 }
 
 h2 {
