@@ -96,6 +96,24 @@ html[data-theme="dark"] .post__header__hero>svg path {
   overflow: auto;
 }
 
-h2 {
-  color: var(--accent-color);
+code {
+  padding: 2px 5px;
+}
+
+pre code {
+  color: #222;
+  display: block;
+  padding: 20px;
+  white-space: pre-wrap;
+  font-size: 14px
+}
+
+div.highlight pre {
+  background-color: initial;
+  color: initial
+}
+
+div.highlight code {
+  background-color: unset;
+  color: unset
 }

@@ -1,0 +1,40 @@
+pre {
+  white-space: break-spaces;
+}
+
+h2 {
+  padding-top: 1rem;
+}
+
+.hl-code {
+  color: #f8f8f2;
+  background-color: #272822;
+  padding: 0 .1875rem;
+}
+
+/* Navigation links styling */
+.post__content a {
+  color: #f8f8f2;
+  text-decoration: none;
+  border-bottom: 1px solid #f8f8f2;
+  transition: all 0.2s ease;
+}
+
+.post__content li a {
+  border-bottom-style: dashed;
+}
+
+.post__content a:hover {
+  color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
+.post__content ul {
+  padding: 0 0 0 1rem;
+  margin: 0;
+}
+
+.post__content li {
+  padding: 0;
+  margin: 0;
+}

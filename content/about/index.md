@@ -5,7 +5,10 @@ layout: "about"
 <div class="about__pic__container">
   <picture>
     <source srcset="images/large_me_vqoaor_c_scale,w_978.png" media="(min-width: 768px)">
-    <img src="images/large_me_vqoaor_c_scale,w_661.png"  style="width: 100%">
+    <img 
+      src="images/large_me_vqoaor_c_scale,w_661.png"  
+      style="width: 100%; aspect-ratio: 4.27; object-fit: cover;"
+    >
   </picture>
   <div class="tint"></div>
 </div>
