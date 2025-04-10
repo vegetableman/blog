@@ -7,7 +7,7 @@ css: "css/packer.css"
 Repository: 
 https://github.com/vegetableman/nixos24.11-packer
 
-There are two steps I had to follow to make sure I could set this vm up on my machine (MacOS using M3):
+Following are two steps I had to follow to make sure I could set this vm up on my machine (MacOS using M3):
 
 <div class="toc">
 
