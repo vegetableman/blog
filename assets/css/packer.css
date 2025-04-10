@@ -39,6 +39,21 @@ h2 {
 }
 
 .post__content li {
-  padding: 0;
+  padding: .3125rem 0;
   margin: 0;
+}
+
+.toc {
+  padding: .625rem;
+  border: 1px solid #ddd;
+  border-radius: .3125rem;
+}
+
+.toc>p {
+  margin: 5px 0;
+}
+
+.toc ul,
+.toc li>a {
+  color: #b5b5b5;
 }

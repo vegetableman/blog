@@ -8,8 +8,14 @@ Repository:
 https://github.com/vegetableman/nixos24.11-packer
 
 There are two steps I had to follow to make sure I could set this vm up on my machine (MacOS using M3):
+
+<div class="toc">
+
+Table of Contents
 - [Booting NixOS manually through QEMU](#booting-nixos-manually-through-qemu)
 - [Fixing SSH handshaking issues popping up during the build process](#fixing-ssh-handshaking-issues-popping-up-during-the-build-process)
+
+</div>
 
 
 ## Booting NixOS manually through QEMU
@@ -33,7 +39,7 @@ vegetableman@mac:~$ /opt/homebrew/bin/qemu-system-aarch64 \
      -nographic
 ```
 
-Booting this iso manually through QEMU helped me understand the required configuration parameters to run it optimally and most importantly, it helped me verify whether my machine could run NixOS on QEMU. Above is the configuration that worked out well on my system.
+Booting the NixOS iso manually through QEMU helped me understand the required configuration parameters to run it optimally and most importantly, it helped me verify whether my machine could, in fact, run NixOS on QEMU. Above is the configuration that worked out well on my system.
 
 
 ## Fixing SSH handshaking issues popping up during the build process
