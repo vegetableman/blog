@@ -46,7 +46,7 @@ Booting the NixOS iso manually through QEMU helped me understand the required co
 
 This was the most frustating of issues that I had to face to get packer working. It's not difficult to find these issues reported on the [packer repo](https://github.com/search?q=repo%3Ahashicorp%2Fpacker+ssh+timeout&type=issues).
 
-To cut to the chase, the most parameter to tweak is <span class="hl-code">`boot_wait`</span>.  I went with `30s`. However, I have seen it being set to a much higher value, like, `120s` on some repo's. This is the time packer waits BEFORE sending any boot commands. The time should be reasonable enough for the guest vm to boot completely including finish setting up the <span class="hl-code">`sshd`</span> daemon, without which packer goes on an endless loop of failed connection attempts. I have seen way too many of those failures, but I live to tell the tale.
+To cut to the chase, the most important parameter to tweak is <span class="hl-code">`boot_wait`</span>.  I went with `30s`. However, I have seen it being set to a much higher value, like, `120s` on some repo's. This is the time packer waits BEFORE sending any boot commands. The time should be reasonable enough for the guest vm to boot completely including finish setting up the <span class="hl-code">`sshd`</span> daemon, without which packer goes on an endless loop of failed connection attempts. I have seen way too many of those failures, but I live to tell the tale.
 
 Other parameters that might help you from getting stuck are: <span class="hl-code">`ssh_handshake_attempts`</span>, <span class="hl-code">`ssh_wait_timeout`</span>, <span class="hl-code">`ssh_timeout`</span>. Details on them are documented on the repo above.
 
