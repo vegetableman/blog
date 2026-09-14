@@ -2,7 +2,7 @@
 <aside class="site-sidebar" aria-label="About Vignesh Anand">
   <div>
     {{ with $about.Resources.GetMatch "large_me.png" }}
-      <a href="/about/" class="profile-image-link" aria-label="About Vignesh Anand"><img class="profile-image" src="{{ .RelPermalink }}" width="180" height="180" alt="Vignesh Anand"></a>
+      <div class="profile-image-link"><img class="profile-image" src="{{ .RelPermalink }}" width="180" height="180" alt="Vignesh Anand"></div>
     {{ end }}
     <h1 class="profile-name"><a href="/">Vignesh<br>Anand</a></h1>
     <p class="profile-bio">A product-oriented developer who is currently building a solution to customer service woes - <a href="https://overridehq.com/" target="_blank" rel="noopener noreferrer">Override</a></p>
@@ -11,7 +11,6 @@
       <a href="https://github.com/vegetableman" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span> GitHub</a>
       <a href="https://www.linkedin.com/in/vignesh-anand-176400212/" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span> LinkedIn</a>
       <a href="https://x.com/vghanand" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span> X / Twitter</a>
-      <a href="/about/"><span aria-hidden="true">→</span> More about me</a>
     </nav>
   </div>
   <div class="sidebar-footer">© {{ now.Year }} Vignesh Anand</div>

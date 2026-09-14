@@ -19,13 +19,6 @@ url = "/"
 weight = 10
 
 [[menu.main]]
-identifier = "about"
-name = "About"
-title = "about"
-url = "/about/"
-weight = 20
-
-[[menu.main]]
 identifier = "github"
 name = "Github"
 title = "github"

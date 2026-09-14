@@ -151,7 +151,6 @@ img, svg, video, canvas { max-width: 100%; }
 .post__content code { font-size: .86em; }
 .post__content :not(pre) > code { padding: .1em .35em; border-radius: 3px; background: #f0ece8; }
 .post__content table { display: block; max-width: 100%; overflow-x: auto; }
-.about__pic__container { overflow: hidden; margin-bottom: 2.5rem; border-radius: 3px; }
 .citation { font-size: .6875rem; }
 
 @media (max-width: 720px) {
