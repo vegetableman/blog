@@ -50,18 +50,20 @@ img, svg, video, canvas { max-width: 100%; }
 }
 .profile-image-link {
   display: block;
-  width: 202px;
+  width: 210px;
   margin: .4rem 0 2.2rem .3rem;
-  padding: 10px 10px 14px;
-  border: 1px solid #d2d2d2;
-  background: #fff;
-  transform: rotate(-4deg);
+  padding: 14px;
+  border: 1px solid #eae7e1;
+  border-radius: 3px;
+  background: linear-gradient(135deg, #fbfaf7, #fffefd 24%, #fffefd 68%, #faf9f6);
+  transform: rotate(-3deg);
   transform-origin: center;
 }
 .profile-image {
   display: block;
   width: 180px;
   height: 180px;
+  border-radius: 3px;
   object-fit: cover;
   object-position: 43% center;
 }
@@ -171,7 +173,7 @@ img, svg, video, canvas { max-width: 100%; }
     border-right: 0;
     border-bottom: 1px solid var(--border-color);
   }
-  .profile-image-link { width: 152px; margin: .3rem 0 2rem .25rem; padding: 8px 8px 11px; }
+  .profile-image-link { width: 160px; margin: .3rem 0 2rem .25rem; padding: 12px; }
   .profile-image { width: 134px; height: 134px; }
   .profile-name { margin-bottom: 1.5rem; }
   .profile-links { margin-top: 1.5rem; }
