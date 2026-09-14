@@ -1,12 +1,24 @@
 {{ $page := .Page }}
-
 <li class="listing__post">
-  <time class="listing__post__time">{{ .Date | time.Format (i18n "posts.date") }}</time>
-  {{ with .Params.external_link }}
-  <a class="listing__post__link" href="{{ . }}" target="_blank">{{ $page.Title }}</a>
+  {{ if .Params.project_name }}
+    {{ $url := .RelPermalink }}
+    {{ with .Params.external_link }}{{ $url = . }}{{ end }}
+    <a class="listing__post__link listing__post__link--project" href="{{ $url }}"{{ with .Params.external_link }} target="_blank" rel="noopener noreferrer"{{ end }}>
+      <span class="listing__post__project-copy">
+        <span class="listing__post__project-name">{{ .Params.project_name }}</span>
+        <span class="listing__post__project-description">{{ .Params.project_description }}</span>
+      </span>
+      <span class="listing__post__project-arrow" aria-hidden="true">↗</span>
+    </a>
+  {{ else if .Params.external_link }}
+    <a class="listing__post__link" href="{{ .Params.external_link }}" target="_blank" rel="noopener noreferrer">
+      <span class="listing__post__title">{{ $page.Title }}</span>
+      <span class="listing__post__meta">{{ $page.Date.Format "Jan 2006" }} <span aria-hidden="true">↗</span></span>
+    </a>
   {{ else }}
-  <a class="listing__post__link" href="{{ .Permalink }}">
-    {{ .Title }}
-  </a>
+    <a class="listing__post__link" href="{{ .RelPermalink }}">
+      <span class="listing__post__title">{{ .Title }}</span>
+      <time class="listing__post__meta" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
+    </a>
   {{ end }}
 </li>

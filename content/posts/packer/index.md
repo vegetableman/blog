@@ -46,15 +46,14 @@ Booting the NixOS iso manually through QEMU helped me understand the required co
 
 This was the most frustating of issues that I had to face to get packer working. It's not difficult to find these issues reported on the [packer repo](https://github.com/search?q=repo%3Ahashicorp%2Fpacker+ssh+timeout&type=issues).
 
-To cut to the chase, the most important parameter to tweak is <span class="hl-code">`boot_wait`</span>.  I went with `30s`. However, I have seen it being set to a much higher value, like, `120s` on some repo's. This is the time packer waits BEFORE sending any boot commands. The time should be reasonable enough for the guest vm to boot completely including finish setting up the <span class="hl-code">`sshd`</span> daemon, without which packer goes on an endless loop of failed connection attempts. I have seen way too many of those failures, but I live to tell the tale.
+To cut to the chase, the most important parameter to tweak is `boot_wait`.  I went with `30s`. However, I have seen it being set to a much higher value, like, `120s` on some repo's. This is the time packer waits BEFORE sending any boot commands. The time should be reasonable enough for the guest vm to boot completely including finish setting up the `sshd` daemon, without which packer goes on an endless loop of failed connection attempts. I have seen way too many of those failures, but I live to tell the tale.
 
-Other parameters that might help you from getting stuck are: <span class="hl-code">`ssh_handshake_attempts`</span>, <span class="hl-code">`ssh_wait_timeout`</span>, <span class="hl-code">`ssh_timeout`</span>. Details on them are documented on the repo above.
+Other parameters that might help you from getting stuck are: `ssh_handshake_attempts`, `ssh_wait_timeout`, `ssh_timeout`. Details on them are documented on the repo above.
 
-The boot commands (<span class="hl-code">`boot_command`</span>) are the second most important detail where we send commands to save the public key on the guest vm, that both packer and vagrant need to establish SSH connections to the vm, for provisioning and logging in respectively. More details on it are documented [here](https://developer.hashicorp.com/vagrant/docs/boxes/base). 
+The boot commands (`boot_command`) are the second most important detail where we send commands to save the public key on the guest vm, that both packer and vagrant need to establish SSH connections to the vm, for provisioning and logging in respectively. More details on it are documented [here](https://developer.hashicorp.com/vagrant/docs/boxes/base).
 
-In fact, Hashicorp provides its own set of public and private keys called insecured keypairs (available on this [repo](https://github.com/hashicorp/vagrant/tree/main/keys)) that could be placed on a directory. While the private key is set through <span class="hl-code">`ssh_private_key_file`</span>, the public key is sent to the guest vm using the <span class="hl-code">`http_directory`</span> parameter.
+In fact, Hashicorp provides its own set of public and private keys called insecured keypairs (available on this [repo](https://github.com/hashicorp/vagrant/tree/main/keys)) that could be placed on a directory. While the private key is set through `ssh_private_key_file`, the public key is sent to the guest vm using the `http_directory` parameter.
 
 This process of building my vagrant box also led me to publish it to the [vagrant cloud](https://portal.cloud.hashicorp.com/vagrant/discover/vegetableman/nixos-24.11-aarch64).
 
 Until next time.
-

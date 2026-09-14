@@ -10,17 +10,11 @@ h2 {
   padding-top: 1rem;
 }
 
-.hl-code {
-  color: #f8f8f2;
-  background-color: #272822;
-  padding: 0 .1875rem;
-}
-
 /* Navigation links styling */
 .post__content a {
-  color: #f8f8f2;
+  color: var(--text-color);
   text-decoration: none;
-  border-bottom: 1px solid #f8f8f2;
+  border-bottom: 1px solid var(--text-color);
   transition: all 0.2s ease;
 }
 
@@ -53,7 +47,10 @@ h2 {
   margin: 5px 0;
 }
 
-.toc ul,
-.toc li>a {
-  color: #b5b5b5;
+.toc ul {
+  color: var(--muted-color);
+}
+
+.toc li > a {
+  color: var(--text-color);
 }

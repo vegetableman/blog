@@ -4,6 +4,9 @@ date: 2023-11-21T00:42:44+05:30
 css: "css/betamax.css"
 type: "blog"
 layout: "betamax"
+project: true
+project_name: "Betamax"
+project_description: "Record and generate animated screencasts in the browser"
 ---
 
 <div class="br"></div>

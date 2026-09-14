@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 {{- partial "head.html" . -}}
-
 <body>
-  <main class="wrapper">
-    {{- partial "header.html" . -}}
-    <section class="content">
+  <div class="site-shell {{ if .IsHome }}is-home{{ else }}is-interior{{ end }}">
+    {{- partial "profile.html" . -}}
+    <main class="site-main" id="main-content">
+      {{ if not .IsHome }}<a class="back-link" href="/">← Writing</a>{{ end }}
       {{- block "main" . }}{{- end }}
-      </div>
-      <div class="placeholder"></div>
-  </main>
-  {{- partial "footer.html" . -}}
+      {{- partial "footer.html" . -}}
+    </main>
+  </div>
 </body>
-
 </html>

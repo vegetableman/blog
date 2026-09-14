@@ -388,10 +388,10 @@ figure img {
   }
 }
 
-h4,
-h3,
-h2 {
-  color: var(--accent-color)
+.post__content h2,
+.post__content h3,
+.post__content h4 {
+  color: #000;
 }
 
 

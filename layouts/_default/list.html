@@ -1,5 +1,26 @@
 {{ define "main" }}
-<section class="listing">
-  {{- partial "posts.html" . -}}
+<section class="listing" aria-labelledby="writing-heading">
+  <h2 class="section-label" id="writing-heading">Writing</h2>
+  <ul class="listing__posts">
+    {{ range (where .Site.RegularPages "Type" "in" (slice "posts" "blog")) }}
+      {{ if not (or .Params.external_link .Params.project .Params.illustration) }}{{ .Render "li" }}{{ end }}
+    {{ end }}
+  </ul>
+</section>
+<section class="listing" aria-labelledby="projects-heading">
+  <h2 class="section-label" id="projects-heading">Projects</h2>
+  <ul class="listing__posts">
+    {{ range (where .Site.RegularPages "Type" "in" (slice "posts" "blog")) }}
+      {{ if or .Params.external_link .Params.project }}{{ .Render "li" }}{{ end }}
+    {{ end }}
+  </ul>
+</section>
+<section class="listing" aria-labelledby="illustrations-heading">
+  <h2 class="section-label" id="illustrations-heading">Illustrations</h2>
+  <ul class="listing__posts">
+    {{ range (where .Site.RegularPages "Type" "in" (slice "posts" "blog")) }}
+      {{ if .Params.illustration }}{{ .Render "li" }}{{ end }}
+    {{ end }}
+  </ul>
 </section>
 {{ end }}
