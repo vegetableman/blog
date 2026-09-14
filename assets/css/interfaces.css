@@ -267,7 +267,7 @@
   text-align: center;
   font-size: .875rem;
   color: var(--caption-color);
-  letter-spacing: -0.025rem;
+  letter-spacing: -0.1px;
   padding-top: .625rem;
 }
 

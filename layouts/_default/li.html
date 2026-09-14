@@ -8,7 +8,7 @@
         <span class="listing__post__project-name">{{ .Params.project_name }}</span>
         <span class="listing__post__project-description">{{ .Params.project_description }}</span>
       </span>
-      <span class="listing__post__project-arrow" aria-hidden="true">↗</span>
+      {{ with .Params.external_link }}<span class="listing__post__project-arrow" aria-hidden="true">↗</span>{{ end }}
     </a>
   {{ else if .Params.external_link }}
     <a class="listing__post__link" href="{{ .Params.external_link }}" target="_blank" rel="noopener noreferrer">
